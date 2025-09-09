@@ -123,8 +123,8 @@ export const Solution = () => {
           </div>
         </div>
         <div className="h-[400px] flex gap-6  text-white">
-          {data.map((da) => (
-            <div className="w-[100%] h-full relative">
+          {data.map((da,index) => (
+            <div key={index} className="w-[100%] h-full relative">
               <img src={da.img} alt="" className="h-full w-full rounded-3xl" />
               <div className="absolute bottom-0 left-0 p-6">
                 <p className="text-[30px] font-medium ">{da.title}</p>
