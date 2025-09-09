@@ -3,8 +3,9 @@ import OverView from "@/components/OverView";
 import Predict from "@/components/Predict";
 import Security from "@/components/Security";
 import { Solution } from "@/components/Solution";
+import Testimonial from "@/components/Testimonial";
 import Trusted from "@/components/Trusted";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Solution/>
       <Predict/>
       <Security/>
+      <Testimonial/>
     </>
   );
 }
