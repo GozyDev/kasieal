@@ -16,7 +16,7 @@ const data = [
 
 export const Solution = () => {
   return (
-    <section className="py-[110px] px-[56px] text-black space-y-[90px] ">
+    <section className="py-[110px] px-[56px] text-black space-y-[90px] bg-gray-100">
       <div className="max-w-[800px]  mx-auto space-y-[15px]">
         <h2 className="text-[52px] font-semibold text-center">
           Smart Solutions for Modern Workstyles
@@ -28,30 +28,39 @@ export const Solution = () => {
         </p>
       </div>
       <div className="space-y-6">
-        <div className="h-[450px] flex gap-6">
-          <div className=" shadow-lg w-[100%] py-[12px] px-[20px] relative rounded-2xl">
-            <div className="space-y-3 ">
+        <div className="h-[500px] flex gap-6">
+          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white">
+            <img
+              src="/solution/Pattern.svg"
+              alt=""
+              className="absolute right-0 opacity-30 top-0"
+            />
+            <div className="absolute aspect-square  right-5 top-0 w-[220px] h-auto bg-[#c5dcf6] opacity-90 blur-3xl" />
+            <div className="absolute aspect-square  left-4 bottom-0 w-[220px] h-auto bg-[#c5dcf6]  blur-3xl" />
+            <div className="space-y-3 relative">
               <p className="text-[30px] font-medium">Digital Payments</p>
               <p className="text-[18px] text-black/80">
                 Pay for digital goods like domains, plugins, or SEO tools
               </p>
             </div>
-            {/* <div className="border border-black">
-              <img
-                src="/solution/image 12.png"
-                alt="baner"
-                width={100}
-                height={100}
-                className="w-[300px] border border-black"
-              ></img>
-              <img
-                src="/solution/image 11.png"
-                alt="baner"
-                width={300}
-                height={100}
-                className="  border border-black"
-              ></img>
-            </div> */}
+            {
+              <div className=" flex flex-col gap-2 items-center  justify-center mt-[10px]">
+                <img
+                  src="/solution/image 24.png"
+                  alt="baner"
+                  width={100}
+                  height={100}
+                  className="w-[300px]  rounded-xl drop-shadow-[5px_5px_5px_rgba(89,22,139,0.2)]"
+                ></img>
+                <img
+                  src="/solution/image 25.png"
+                  alt="baner"
+                  width={300}
+                  height={100}
+                  className="  -rotate-7 rounded-3xl drop-shadow-[5px_5px_5px_rgba(89,22,139,0.2)]"
+                ></img>
+              </div>
+            }
             <div>
               <img
                 src="/solution/image 10.png"
@@ -63,8 +72,14 @@ export const Solution = () => {
             </div>
           </div>
 
-          <div className=" shadow-lg w-[100%] py-[12px] px-[20px] relative rounded-2xl">
-            <div className="space-y-3 ">
+          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden ">
+            <img
+              src="/solution/Pattern.svg"
+              alt=""
+              className="absolute right-0 opacity-30 top-0"
+            />
+            <div className="absolute aspect-square  right-7 top-0 w-[220px] h-auto bg-[#c9f4bf] opacity-70 blur-3xl" />
+            <div className="space-y-3 relative ">
               <p className="text-[30px] font-medium">SaaS</p>
               <p className="text-[18px] text-black/80">
                 Bill users, accept global payments, and manage subscriptions
@@ -72,13 +87,13 @@ export const Solution = () => {
               </p>
             </div>
             {
-              <div className="border-b-black  mt-[30px]">
+              <div className="border-b-black  mt-[36px] relative">
                 <img
                   src="/solution/image 14.png"
                   alt="baner"
                   width={100}
                   height={100}
-                  className="mx-auto   w-[80%]"
+                  className="mx-auto w-[80%]"
                 ></img>
               </div>
             }
@@ -88,26 +103,33 @@ export const Solution = () => {
                 alt="baner"
                 width={100}
                 height={100}
-                className="w-[340px]  absolute bottom-5 left-1/2 -translate-x-1/2"
+                className="w-[390px]  absolute bottom-5 left-1/2 -translate-x-1/2 "
               ></img>
             </div>
           </div>
 
-          <div className=" shadow-lg w-[100%] py-[12px] px-[20px] relative rounded-2xl">
+          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden">
             <div className="space-y-3 ">
+              <img
+                src="/solution/Pattern.svg"
+                alt=""
+                className="absolute right-0 opacity-30 top-0"
+              />
+              <div className="absolute aspect-square  right-5 top-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
+              <div className="absolute aspect-square  left-4 bottom-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
               <p className="text-[30px] font-medium">Digital Payments</p>
-              <p className="text-[18px] text-black/80">
+              <p className="text-[18px] text-black/80 relative">
                 Pay for digital goods like domains, plugins, or SEO tools
               </p>
             </div>
             {
-              <div className="border-b-black  mt-[30px]">
+              <div className="border-b-black  mt-[36px]">
                 <img
                   src="/solution/image 15.png"
                   alt="baner"
                   width={100}
                   height={100}
-                  className="mx-auto   w-[80%]"
+                  className="mx-auto   w-[90%] relative"
                 ></img>
               </div>
             }
@@ -117,25 +139,21 @@ export const Solution = () => {
                 alt="baner"
                 width={100}
                 height={100}
-                className="w-[340px]  absolute bottom-5 left-1/2 -translate-x-1/2"
+                className="w-[370px]  absolute bottom-5 left-1/2 -translate-x-1/2"
               ></img>
             </div>
           </div>
         </div>
         <div className="h-[400px] flex gap-6  text-white">
-          {data.map((da,index) => (
+          {data.map((da, index) => (
             <div key={index} className="w-[100%] h-full relative">
               <img src={da.img} alt="" className="h-full w-full rounded-3xl" />
               <div className="absolute bottom-0 left-0 p-6">
                 <p className="text-[30px] font-medium ">{da.title}</p>
-                <p className="text-[18px]">
-                 {da.sub}
-                </p>
+                <p className="text-[18px]">{da.sub}</p>
               </div>
             </div>
           ))}
-
-          
         </div>
       </div>
     </section>

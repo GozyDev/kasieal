@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction";
 import HomePage from "@/components/HomePage";
 import OverView from "@/components/OverView";
 import Predict from "@/components/Predict";
@@ -18,6 +19,7 @@ export default function Home() {
       <Security />
       <Testimonial />
       <Support />
+      <CallToAction/>
     </>
   );
 }
