@@ -16,20 +16,20 @@ const data = [
 
 export const Solution = () => {
   return (
-    <section className="py-[110px] px-[56px] text-black space-y-[90px] bg-gray-100">
+    <section className="py-[80px] lg:py-[110px] px-[15px] lg:px-[56px] text-black space-y-[50px] lg:space-y-[70px] bg-gray-100">
       <div className="max-w-[800px]  mx-auto space-y-[15px]">
-        <h2 className="text-[52px] font-semibold text-center">
+        <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
           Smart Solutions for Modern Workstyles
         </h2>
-        <p className="text-[20px] text-center text-black/80">
+        <p className="text-[15px] lg:text-[20px] text-center text-black/80">
           Are you looking to freelance, trade crypto, manage your business, or
           do regular stuff? Our tools are crafted to fit the way you move, earn,
           and grow.
         </p>
       </div>
       <div className="space-y-6">
-        <div className="h-[500px] flex gap-6">
-          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white">
+        <div className="h-max  flex flex-col lg:flex-row  gap-6 border">
+          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white">
             <img
               src="/solution/Pattern.svg"
               alt=""
@@ -72,7 +72,7 @@ export const Solution = () => {
             </div>
           </div>
 
-          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden ">
+          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden ">
             <img
               src="/solution/Pattern.svg"
               alt=""
@@ -108,18 +108,18 @@ export const Solution = () => {
             </div>
           </div>
 
-          <div className=" shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden">
-            <div className="space-y-3 ">
-              <img
-                src="/solution/Pattern.svg"
-                alt=""
-                className="absolute right-0 opacity-30 top-0"
-              />
-              <div className="absolute aspect-square  right-5 top-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
-              <div className="absolute aspect-square  left-4 bottom-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
-              <p className="text-[30px] font-medium">Digital Payments</p>
-              <p className="text-[18px] text-black/80 relative">
-                Pay for digital goods like domains, plugins, or SEO tools
+          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden">
+            <div className="absolute aspect-square  right-5 top-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
+            <div className="absolute aspect-square  left-4 bottom-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
+            <img
+              src="/solution/Pattern.svg"
+              alt=""
+              className="absolute right-0 opacity-30 top-0"
+            />
+            <div className="space-y-3 relative ">
+              <p className="text-[30px] font-medium">Crypto</p>
+              <p className="text-[18px] text-black/80 ">
+                Swap, withdraw, and spend your crypto  with real-time conversions.
               </p>
             </div>
             {
@@ -144,13 +144,14 @@ export const Solution = () => {
             </div>
           </div>
         </div>
-        <div className="h-[400px] flex gap-6  text-white">
+
+        <div className="lg:h-[450px] flex flex-col lg:flex-row gap-6  text-white">
           {data.map((da, index) => (
-            <div key={index} className="w-[100%] h-full relative">
+            <div key={index} className="w-[100%] h-full border  relative">
               <img src={da.img} alt="" className="h-full w-full rounded-3xl" />
               <div className="absolute bottom-0 left-0 p-6">
-                <p className="text-[30px] font-medium ">{da.title}</p>
-                <p className="text-[18px]">{da.sub}</p>
+                <p className="text-[25px] lg:text-[30px] font-medium ">{da.title}</p>
+                <p className="text-sm lg:text-[18px] tracking-wider">{da.sub}</p>
               </div>
             </div>
           ))}

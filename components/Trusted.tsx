@@ -15,7 +15,7 @@ const Trusted = () => {
   }, [logos]);
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden px-4">
+    <section className="py-16  bg-gradient-to-b from-gray-50 to-white overflow-hidden px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12 md:mb-16">
           Trusted by <span className="text-purple-800">15,000+</span> businesses

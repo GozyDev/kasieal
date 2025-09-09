@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const HomePage = () => {
   return (
-    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[60px]">
-      <div className="max-w-[800px] space-y-[30px] ">
+    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[60px] overflow-hidden">
+      <div className="max-w-[800px] space-y-[30px]  ">
         <div className="">
           <img
             src="/review.png"

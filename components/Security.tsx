@@ -31,19 +31,19 @@ const data = [
 ];
 const Security = () => {
   return (
-    <section className="py-[110px] px-[56px] text-black bg-gray-100">
-      <div className="space-y-[70px]">
+    <section className="py-[80px] lg:py-[110px] lg:px-[56px] px-[15px] text-black bg-gray-100">
+      <div className="space-y-[50px] lg:space-y-[70px]">
         <div className="max-w-[800px] mx-auto space-y-[15px]">
-          <h2 className="text-[52px] font-semibold text-center">
+          <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
             Your Money Secured
           </h2>
-          <p className="text-[20px] text-center text-black/80">
+          <p className="text-[15px] lg:text-[20px] text-center text-black/80">
             Your safety comes first with Kaisel. From advanced encryption to
             real-time fraud detection, every transaction is protected by
             industry-leading security measures.
           </p>
         </div>
-        <div className="flex gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-6">
           {data.map((da) => (
             <div key={da.id} className="px-8 border shadow-lg pb-[32px] rounded-3xl w-[100%] bg-white">
               <img src={da.img} alt="" className="w-[202px] mx-auto" />

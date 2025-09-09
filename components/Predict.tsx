@@ -3,9 +3,9 @@ import React from "react";
 
 const Predict = () => {
   return (
-    <section className="pt-[80px] py-[110px] px-[56px] text-black ">
-      <div className="flex items-center gap-6">
-        <div className="w-1/2 space-y-1">
+    <section className="pt-[80px] py-[80px] lg:py-[110px] px-[15px] lg:px-[56px] text-black ">
+      <div className="flex flex-col lg:flex-row items-center gap-11 lg:gap-6">
+        <div className="lg:w-1/2 space-y-1">
           <div className="space-y-1">
             <div className="flex  items-center gap-2">
               <img
@@ -33,7 +33,7 @@ const Predict = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 space-y-6">
+        <div className="lg:w-1/2 space-y-6">
           <div className="space-y-1">
             <p className="text-[15px] text-black/70">
               Nova AI monitors your spending habits and tracks market shifts to
@@ -65,12 +65,12 @@ const Predict = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-9">
             <p className="">
               Let Nova AI guide your next financial move with precision — ready
               to begin?
             </p>
-            <div className="space-x-3 flex items-center">
+            <div className="space-x-3 space-y-3 flex flex-col lg:flex-row items-center">
               <button className="text-white bg-purple-900 py-[10px] px-[20px] rounded-full text-[16px] flex items-center gap-2 ">
                 Start Using Nova AI <ArrowRight size={20} />
               </button>{" "}

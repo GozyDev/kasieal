@@ -15,13 +15,13 @@ const Support = () => {
   }, [logos]);
 
   return (
-    <section className="py-[110px] px-[56px] overflow-hidden bg-gray-100 text-black">
+    <section className="pt-[80px] py-[80px] lg:py-[110px] px-[15px] lg:px-[56px] overflow-hidden bg-gray-100 text-black">
       <div className="max-w-7xl mx-auto space-y-[50px]">
         <div className="max-w-[900px] mx-auto space-y-[30px]">
           <h2 className="text-3xl md:text-4xl lg:text-[68px] font-semibold text-center">
             Trusted in 20+ Countries
           </h2>
-          <p className="text-center text-[20px] text-black/70">
+          <p className="text-[15px] lg:text-[20px] text-center text-black/80">
             Kaisel bridges borders with a smooth experience. We’re trusted by
             thousands of users across more than 20 countries.
           </p>

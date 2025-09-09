@@ -88,18 +88,18 @@ const data = [
 ];
 const Testimonial = () => {
   return (
-    <section className="py-[110px] px-[56px] text-black ">
-      <div className="space-y-[40px]">
+    <section className="py-[80px] lg:py-[110px] px-[15px] lg:px-[56px] text-black ">
+      <div className="space-y-[20px] lg:space-y-[40px]">
         <div className="max-w-[800px] mx-auto space-y-[15px] ">
-          <h2 className="text-[52px] font-semibold text-center">
+          <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
             What Our Users Say
           </h2>
-          <p className="text-[20px] text-center text-black/80">
+          <p className="ttext-[15px] lg:text-[20px] text-center text-black/80">
             Real stories from people who use Kaisel everyday
           </p>
         </div>
-        <div className=" max-w-6xl mx-auto p-6 ">
-          <div className="grid grid-cols-2 gap-11 ">
+        <div className=" max-w-6xl mx-auto lg:p-6 ">
+          <div className="grid lg:grid-cols-2 gap-11 ">
             {data.map((da) => (
               <div key={da.id} className="h-full  items-center justify-center">
                 {da.img && (

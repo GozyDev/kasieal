@@ -23,7 +23,7 @@ const OverView = () => {
       ],
 
       video: "/overview/Send & Receive.webm",
-      button:"See how it works"
+      button: "See how it works",
     },
 
     {
@@ -44,7 +44,7 @@ const OverView = () => {
         },
       ],
       video: "/overview/Cards (1).webm",
-      button:"Issue a card now"
+      button: "Issue a card now",
     },
     {
       id: "3",
@@ -65,8 +65,7 @@ const OverView = () => {
         },
       ],
       video: "/overview/Manage.webm",
-      button:"Start managing today "
-
+      button: "Start managing today ",
     },
     {
       id: "4",
@@ -86,32 +85,33 @@ const OverView = () => {
         },
       ],
       video: "/overview/Invoice.webm",
-      button:"Send an invoice now"
-
+      button: "Send an invoice now",
     },
   ];
   return (
-    <section className="py-[110px] px-[56px] text-black ">
-      <div className="max-w-7xl mx-auto space-y-[70px]">
+    <section className="py-[80px] lg:py-[110px] lg:px-[56px] px-[15px] text-black ">
+      <div className="max-w-7xl mx-auto space-y-[50px] lg:space-y-[70px]">
         <div className="max-w-[800px] mx-auto space-y-[15px]">
-          <h2 className="text-[52px] font-semibold text-center">
+          <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
             Bank Smarter With Kaisel
           </h2>
-          <p className="text-[20px] text-center text-black/80">
+          <p className="text-[15px] lg:text-[20px] text-center text-black/80">
             Simplify how you send, spend, and manage money with intelligent
             tools designed to scale with you.
           </p>
         </div>
         <div className=" h-full">
-          <div className="space-y-[70px]">
+          <div className="lg:space-y-[70px] space-y-[50px] h-max">
             {overview.map((view) => (
               <div
                 key={view.id}
-                className={`flex items-center h-[490px] gap-20 ${
-                  Number(view.id) % 2 === 0 ? "flex-row-reverse" : "flex"
+                className={`flex border  items-center h-max lg:h-[490px] gap-20 ${
+                  Number(view.id) % 2 === 0
+                    ? " flex-col lg:flex-row-reverse"
+                    : "flex-col lg:flex-row"
                 }`}
               >
-                <div className="w-1/2 h-full bg-[#ebebfd] rounded-2xl">
+                <div className="w-full lg:w-1/2 h-full bg-[#ebebfd] rounded-2xl">
                   <video
                     src={view.video}
                     autoPlay
@@ -123,7 +123,7 @@ const OverView = () => {
                     aria-hidden="true"
                   />
                 </div>
-                <div className="w-1/2 border  space-y-6">
+                <div className="lg:w-1/2 border  space-y-6">
                   <div className="space-y-4">
                     <h1 className="text-[44px] font-semibold text-black/90">
                       {view.title}
@@ -147,7 +147,8 @@ const OverView = () => {
                     </div>
                   </div>
                   <button className="py-[15px] px-[25px] text-[16px] bg-purple-900 text-white rounded-full flex items-center gap-3">
-                    {view.button}<ArrowRight size={20} />
+                    {view.button}
+                    <ArrowRight size={20} />
                   </button>
                 </div>
               </div>
