@@ -4,7 +4,7 @@ import React from "react";
 const LearnHero = () => {
   return (
     <section className="text-black  px-[15px] md:[20px] lg:px-[56px] py-[110px]">
-      <div className="flex flex-col lg:flex-row  items-center max-w-7xl mx-auto gap-6">
+      <div className="flex flex-col lg:flex-row  items-center   mx-auto gap-6">
         <div className="lg:max-w-1/2 mx-auto space-y-[15px] md:px-0 lg:px- ">
           <h1 className="text-4xl lg:text-[52px] font-semibold">
             Learn How to Use Kaisel In Minutes
@@ -23,7 +23,7 @@ const LearnHero = () => {
           <img
             src="/Learn/learnHero.avif"
             alt="hero image"
-            className="lg:w-[90%] drop-shadow-xl rounded-3xl"
+            className="lg:w-[90%] ml-auto drop-shadow-xl rounded-3xl"
           />
         </div>
       </div>
