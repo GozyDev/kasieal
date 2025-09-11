@@ -83,8 +83,8 @@ export function AccordionDemo() {
               transition={{ duration: 0.3 }}
               className={`rounded-2xl overflow-hidden  ${
                 faq.active
-                  ? "bg-gradient-to-r from-purple-700 to-blue-700 border-transparent"
-                  : "bg-white border-gray-200"
+                  ? "bg-gradient-to-r from-purple-800 to-blue-800 border-transparent"
+                  : "bg-gray-50 border-gray-200"
               } shadow hover:shadow-md transition-all duration-300 py-[20px] font-medium`}
             >
               {faq.status === "popular" && (
