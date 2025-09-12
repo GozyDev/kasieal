@@ -83,11 +83,13 @@ const navigation = [
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="hidden lg:block px-3">
       <nav className="bg-white rounded-full max-w-7xl mx-auto h-[72px] flex text-black items-center justify-between pl-[40px] px-[20px] py-[12px] ">
-        <div className="">
-          <img src="/kaisel.svg" alt="" />
-        </div>
+        <Link href='/'>
+            <div className="">
+              <img src="/kaisel.svg" alt="" />
+            </div>
+        </Link>
 
         <div>
           <ul className="flex gap-5">
@@ -143,12 +145,16 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
-          <button className=" b  py-[12px] px-[12px] rounded-full text-black/70">
-            Login
-          </button>
-          <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white">
-            Open An Account
-          </button>
+          <Link href='/login'>
+              <button className=" b  py-[12px] px-[12px] rounded-full text-black/70 cursor-pointer">
+                Login
+              </button>
+          </Link>
+          <Link href='/signup'>
+              <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
+                Open An Account
+              </button>
+          </Link>
         </div>
       </nav>
     </div>
