@@ -125,10 +125,10 @@ const OverView = () => {
                 </div>
                 <div className="lg:w-1/2 border  space-y-6">
                   <div className="space-y-4">
-                    <h1 className="text-[44px] font-semibold text-black/90">
+                    <h1 className="text-4xl lg:text-[52px] font-semibold text-black/90">
                       {view.title}
                     </h1>
-                    <p className="text-[20px] text-black/50">
+                    <p className="text-[15px] lg:text-[20px] text-black/50">
                       {view.description}
                     </p>
                   </div>
@@ -136,13 +136,13 @@ const OverView = () => {
                     <div className="w-1/2 border-r-purple-500 border-2 p-3">
                       <div className="space-y-2">
                         <img src={view.value[0].icon} alt="" />
-                        <p className="text-[20px]">{view.value[0].text}</p>
+                        <p className="text-[16px] lg:text-[20px]">{view.value[0].text}</p>
                       </div>
                     </div>
                     <div className="w-1/2  p-3 pl-6">
                       <div className="space-y-2">
                         <img src={view.value[1].icon} alt="" />
-                        <p className="text-[20px]">{view.value[1].text}</p>
+                        <p className="text-[16px] lg:text-[20px]">{view.value[1].text}</p>
                       </div>
                     </div>
                   </div>

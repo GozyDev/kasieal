@@ -70,8 +70,8 @@ const Predict = () => {
               Let Nova AI guide your next financial move with precision — ready
               to begin?
             </p>
-            <div className="space-x-3 space-y-3 flex flex-col lg:flex-row items-center">
-              <button className="text-white bg-purple-900 py-[10px] px-[20px] rounded-full text-[16px] flex items-center gap-2 ">
+            <div className="gap-3 flex flex-col-reverse lg:flex-row lg:items-center ">
+              <button className="text-white bg-purple-900 py-[10px] px-[20px] rounded-full text-[16px] flex items-center justify-center gap-2 ">
                 Start Using Nova AI <ArrowRight size={20} />
               </button>{" "}
               <button className="text-purple-900 border border-black bg-purple-transparent py-[10px] px-[20px] rounded-full text-[16px]">

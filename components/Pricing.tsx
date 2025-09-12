@@ -71,7 +71,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="mt-[30px] w-[1080] h-max relative  bg-white p-9 rounded-3xl">
+    <div className="mt-[30px] max-w-[1080] h-max relative  bg-white p-6 lg:p-9 rounded-3xl">
       <div className="grid lg:grid-cols-2  text-black rounded-3xl gap-6">
         <div className="border  h-full space-y-6">
           {data.map((da, index) => (
