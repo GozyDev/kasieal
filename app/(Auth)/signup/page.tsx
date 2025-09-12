@@ -1,10 +1,8 @@
-import LoginSection from '@/components/LoginSection'
-import React from 'react'
+import SignUpSection from "@/components/SignUpSection";
+import React from "react";
 
-const SignUppage = () => {
-  return (
-    <LoginSection/>
-  )
-}
+const SignInpage = () => {
+  return <SignUpSection />;
+};
 
-export default SignUppage
+export default SignInpage;
