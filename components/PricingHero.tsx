@@ -3,7 +3,7 @@ import Pricing from "./Pricing";
 
 const PricingHero = () => {
   return (
-    <section className="bg-gradient-to-b  from-blue-800    via-purple-800 to-white border-transparent h-full flex flex-col items-center pt-[60px] overflow-hidden">
+    <section className="bg-gradient-to-b  from-blue-800    via-purple-800 to-white border-transparent h-full flex flex-col items-center pt-[60px] pt-[150px] overflow-hidden">
       <div className="max-w-[800px] lg:space-y-[30px]  ">
         <div className="">
           <img

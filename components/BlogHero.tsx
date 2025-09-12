@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogHero = () => {
   return (
-    <section className="text-black  px-[15px] md:[20px] lg:px-[56px] pt-[110px] pb-[56px] bg-[#f6f7f9]">
+    <section className="text-black  px-[15px] md:[20px] lg:px-[56px]  pt-[150px] pb-[56px] bg-[#f6f7f9]">
       <div className="flex flex-col lg:flex-row  items-center p-3 lg:p-9 rounded-3xl  mx-auto gap-6 bg-white">
         <div className="lg:max-w-1/2 mx-auto space-y-[15px] md:px-0 lg:px- ">
           <p className="font-light text-black/70">Aug 10, 2025</p>

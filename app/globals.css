@@ -125,3 +125,8 @@
 .shadow{
   color: rgba(89, 22, 139) ;
 }
+
+
+html{
+  scroll-behavior: smooth;
+}

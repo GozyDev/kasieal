@@ -3,7 +3,7 @@ import React from "react";
 
 const LearnHero = () => {
   return (
-    <section className="text-black  px-[15px] md:[20px] lg:px-[56px] py-[110px]">
+    <section className="text-black  px-[15px] md:[20px] lg:px-[56px] py-[110px] pt-[150px]">
       <div className="flex flex-col lg:flex-row  items-center   mx-auto gap-6">
         <div className="lg:max-w-1/2 mx-auto space-y-[15px] md:px-0 lg:px- ">
           <h1 className="text-4xl lg:text-[52px] font-semibold">

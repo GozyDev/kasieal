@@ -105,6 +105,7 @@ const OverView = () => {
             {overview.map((view) => (
               <div
                 key={view.id}
+                id={view.title}
                 className={`flex border  items-center h-max lg:h-[490px] gap-20 ${
                   Number(view.id) % 2 === 0
                     ? " flex-col lg:flex-row-reverse"

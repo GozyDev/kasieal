@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import {poppins} from "@/lib/font"
+import { poppins } from "@/lib/font";
 
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,16 +28,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${poppins.className} antialiased  `}
-      >
+      <body className={`${poppins.className} antialiased  `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="bg-white ">{children}</main>
+          <section className="py-[10px] fixed w-full z-50">
+            <Navbar />
+          </section>
+          <main className="bg-white  ">{children}</main>
         </ThemeProvider>
       </body>
     </html>
