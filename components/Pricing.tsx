@@ -140,7 +140,7 @@ const Pricing = () => {
               <ul className="space-y-5">
                 {data[activeData].details.map((li, index) => (
                   <li key={index} className="flex  gap-3">
-                    <img src="/price/image 28.png" alt="" className="w-5 h-5" />{" "}
+                    <img src="/Price/image 28.png" alt="" className="w-5 h-5" />{" "}
                     <p className="text-[16px] text-black/70">{li}</p>
                   </li>
                 ))}

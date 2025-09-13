@@ -14,7 +14,7 @@ const CallToAction = () => {
             smarter, move money faster, and plan ahead with AI-powered insights.
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-3 justify-center">
-            <button className="py-[15px] px-[25px] text-[16px] bg-purple-900 text-white rounded-full flex items-center gap-3">
+            <button className="py-[15px] px-[25px] text-[16px] bg-white text-purple-900 rounded-full flex items-center gap-3">
               Book a Free Demo
             </button>
             <button className="py-[15px] px-[25px] text-[16px] bg-white text-purple-900 rounded-full flex items-center gap-3">

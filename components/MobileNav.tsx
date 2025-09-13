@@ -1,7 +1,7 @@
 "use client";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 
 const navigationData = [
   {
@@ -111,8 +111,8 @@ const MobileNavbar = () => {
     );
   };
   return (
-    <div className="lg:hidden relative px-3 ">
-      <nav className="bg-white rounded-full max-w-7xl mx-auto h-[72px] flex text-black items-center justify-between pl-[40px] px-[40px] py-[12px] ">
+    <div className="lg:hidden relative px-6 ">
+      <nav className="bg-white rounded-full w-full max-w-7xl  h-[72px] flex text-black items-center justify-between  py-[10px] px-5 ">
         <Link
           href="/"
           onClick={() => (setActive(false), setNavigation(navigationData))}
@@ -123,88 +123,90 @@ const MobileNavbar = () => {
         </Link>
 
         {active && (
-          <div className="absolute  top-[100px] bg-white  rounded-3xl w-[95%] left-[50%] translate-x-[-50%] p-6 space-y-3  ">
-            <ul className="flex flex-col gap-6">
-              {navigation.map((nav, index) => (
-                <li
-                  key={index}
-                  className="cursor-pointer relative group bg-transparent "
-                >
-                  {nav.href ? (
-                    <Link
-                      href={nav.href}
-                      className="hover:text-purple-800 transition-all "
-                      onClick={() => setActive(false)}
-                    >
-                      {nav.name}
-                    </Link>
-                  ) : (
-                    <p
-                      className={`hover:text-purple-800 transition-all ${
-                        nav.isActive ? "text-purple-800" : "text-black"
-                      }`}
-                      onClick={() => SetANavigation(nav.id)}
-                    >
-                      {nav.name}
-                    </p>
-                  )}
-
-                  {nav.subNav && (
-                    <div
-                      className={`h-max w-full block  pt-[10px]  bg-transparent ${
-                        nav.isActive ? "block" : "hidden"
-                      }`}
-                    >
-                      <div
-                        className={`grid   bg-white h-full w-full p-6 rounded-3xl shadow-2xl`}
+          <section className="absolute  w-full top-[100px] left-0 px-3">
+            <div className="bg-white  rounded-3xl p-6 space-y-3  ">
+              <ul className="flex flex-col gap-6">
+                {navigation.map((nav, index) => (
+                  <li
+                    key={index}
+                    className="cursor-pointer relative group bg-transparent "
+                  >
+                    {nav.href ? (
+                      <Link
+                        href={nav.href}
+                        className="hover:text-purple-800 transition-all "
+                        onClick={() => setActive(false)}
                       >
-                        {nav.subNav.map((sub, index) => (
-                          <Link
-                            href={sub.href}
-                            key={index}
-                            onClick={() => setActive(false)}
-                          >
-                            <div
+                        {nav.name}
+                      </Link>
+                    ) : (
+                      <p
+                        className={`hover:text-purple-800 transition-all ${
+                          nav.isActive ? "text-purple-800" : "text-black"
+                        } flex items-center`}
+                        onClick={() => SetANavigation(nav.id)}
+                      >
+                        {nav.name}
+                        <ChevronDown className={` transition-all ${
+                          nav.isActive ? "rotate-180" : "rotate-0"
+                        }  `} />
+                      </p>
+                    )}
+                    {nav.subNav && (
+                      <div
+                        className={`h-max w-full block  pt-[10px]  bg-transparent ${
+                          nav.isActive ? "block" : "hidden"
+                        }`}
+                      >
+                        <div className={`grid   h-full w-full  rounded-3xl `}>
+                          {nav.subNav.map((sub, index) => (
+                            <Link
+                              href={sub.href}
                               key={index}
-                              className="p-4 hover:bg-gray-100  rounded-2xl flex gap-3"
+                              onClick={() => setActive(false)}
                             >
-                              <div className="w-[40px] h-[30px] flex items-center justify-center border border-black/20 rounded">
-                                <img
-                                  src={sub.icon}
-                                  alt=""
-                                  className="w-[24px]"
-                                />
+                              <div
+                                key={index}
+                                className="py-2 hover:bg-gray-100  rounded-2xl flex gap-3  "
+                              >
+                                <div className="w-[40px] h-[30px] flex items-center justify-center border border-black/20 rounded">
+                                  <img
+                                    src={sub.icon}
+                                    alt=""
+                                    className="w-[18px]"
+                                  />
+                                </div>
+                                <div>
+                                  <p className="text-[15px] font-semibold">{sub.title}</p>
+                                  <p className="text-black/70 text-sm text-[13px]">
+                                    {sub.description}
+                                  </p>
+                                </div>
                               </div>
-                              <div>
-                                <p className="font-semibold">{sub.title}</p>
-                                <p className="text-black/70 text-sm">
-                                  {sub.description}
-                                </p>
-                              </div>
-                            </div>
-                          </Link>
-                        ))}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-            {
-              <div className="flex flex-col gap-3">
-                <Link href="/login">
-                  <button className="   py-[12px] rounded-full text-black/70 cursor-pointer">
-                    Login
-                  </button>
-                </Link>
-                <Link href="/signup">
-                  <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
-                    Open An Account
-                  </button>
-                </Link>
-              </div>
-            }
-          </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
+              {
+                <div className="flex flex-col gap-3">
+                  <Link href="/login">
+                    <button className="   py-[12px] rounded-full text-black/70 cursor-pointer">
+                      Login
+                    </button>
+                  </Link>
+                  <Link href="/signup">
+                    <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
+                      Open An Account
+                    </button>
+                  </Link>
+                </div>
+              }
+            </div>
+          </section>
         )}
 
         <div onClick={() => setActive(!active)} className="cursor-pointer">

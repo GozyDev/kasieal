@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation links */}
-        <nav className="flex space-x-8 text-gray-800 font-medium">
+        <nav className="flex space-x-3 lg:space-x-5 text-gray-800 font-medium text-sm lg:text-lg">
           <Link href="/#solutions" className="hover:text-purple-600">
             Solutions
           </Link>
