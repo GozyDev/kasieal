@@ -1,5 +1,5 @@
 "use client";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { act, useState } from "react";
 
@@ -208,7 +208,7 @@ const MobileNavbar = () => {
         )}
 
         <div onClick={() => setActive(!active)} className="cursor-pointer">
-          <Menu size={40} />
+          {!active ? <Menu size={40} /> : <X size={40} />}
         </div>
       </nav>
     </div>

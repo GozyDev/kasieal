@@ -2,7 +2,7 @@ import { Search, MessageCircle, Mail, Phone } from "lucide-react";
 
 export default function FAQSearch() {
   return (
-    <section className="bg-purple-900 text-black py-16 lg:py-24 px-4 pt-[150px] ">
+    <section className="bg-purple-900 text-black py-16 lg:py-24 px-4 pt-[150px] lg:pt-[150px] ">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">

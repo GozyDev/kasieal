@@ -1,3 +1,4 @@
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -38,14 +39,14 @@ const navigation = [
     href: "",
     subNav: [
       {
-        icon: "/nav/image 42.png",
+        icon: "/nav/image 43.png",
         title: "Kasiel Learn",
         description: "Learn to use Kasiel in minute",
         href: "/Learn",
       },
 
       {
-        icon: "/nav/image 43.png",
+        icon: "/nav/image 42.png",
         title: "Calculator",
         description: "Convert currencies in real-time",
         href: "#",
@@ -85,14 +86,14 @@ const Navbar = () => {
   return (
     <div className="hidden lg:block px-3">
       <nav className="bg-white rounded-full max-w-7xl mx-auto h-[72px] flex text-black items-center justify-between pl-[40px] px-[20px] py-[12px] ">
-        <Link href='/'>
-            <div className="">
-              <img src="/kaisel.svg" alt="" />
-            </div>
+        <Link href="/">
+          <div className="">
+            <img src="/kaisel.svg" alt="" />
+          </div>
         </Link>
 
         <div>
-          <ul className="flex gap-5">
+          <ul className="flex gap-9">
             {navigation.map((nav, index) => (
               <li
                 key={index}
@@ -101,13 +102,14 @@ const Navbar = () => {
                 {nav.href ? (
                   <Link
                     href={nav.href}
-                    className="hover:text-purple-800 transition-all "
+                    className="hover:text-purple-800 transition-all text-[18px] "
                   >
-                    {nav.name}
+                    <p>{nav.name}</p>{" "}
                   </Link>
                 ) : (
-                  <p className="hover:text-purple-800 transition-all ">
+                  <p className="hover:text-purple-800 transition-all text-[18px] flex items-center  ">
                     {nav.name}
+                    <ChevronDown className="group-hover:rotate-180 transition-all" />
                   </p>
                 )}
 
@@ -145,15 +147,15 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
-          <Link href='/login'>
-              <button className=" b  py-[12px] px-[12px] rounded-full text-black/70 cursor-pointer">
-                Login
-              </button>
+          <Link href="/login">
+            <button className=" b  py-[12px] px-[12px] rounded-full text-black/70 cursor-pointer text-[18px]">
+              Login
+            </button>
           </Link>
-          <Link href='/signup'>
-              <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
-                Open An Account
-              </button>
+          <Link href="/signup">
+            <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
+              Open An Account
+            </button>
           </Link>
         </div>
       </nav>
