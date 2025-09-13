@@ -6,6 +6,7 @@ import { poppins } from "@/lib/font";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import MobileNavbar from "@/components/MobileNav";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,10 @@ export default function RootLayout({
             <MobileNavbar/>
           </section>
           <main className="bg-white  ">{children}</main>
+
+          <section>
+            <Footer/>
+          </section>
         </ThemeProvider>
       </body>
     </html>
