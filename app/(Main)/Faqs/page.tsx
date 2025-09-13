@@ -16,7 +16,7 @@ const Faqspage = () => {
           <div className="space-y-3 flex-1 ">
             <h3 className="text-[20px] font-semibold">Still have questions?</h3>
             <p className="text-18px">
-              Can’t find an answer? Kindly reach out to Kaisel's Team by hitting
+              Can&apos;t find an answer? Kindly reach out to Kaisel&apos;s Team by hitting
               the button
             </p>
           </div>

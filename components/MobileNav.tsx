@@ -1,7 +1,7 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import React, { act, useState } from "react";
+import React, {  useState } from "react";
 
 const navigationData = [
   {

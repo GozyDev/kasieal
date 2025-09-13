@@ -1,5 +1,4 @@
 "use client";
-import { div } from "framer-motion/client";
 import { DollarSign, Rocket, UsersRound, Zap } from "lucide-react";
 import React, { useState } from "react";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 const HomePage = () => {
   return (
     <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[150px] overflow-hidden px-3">

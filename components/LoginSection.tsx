@@ -19,13 +19,9 @@ export default function LoginSection() {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-100 px-4 py-8 relative">
-      <button
-        className="bg-black p-3.5 absolute top-5 left-5 rounded-3xl text-sm bg-gradient-to-l from-purple-800 to-blue-800 cursor-pointer"
-        onClick={() => router.back()}
-      >
-        Go back
-      </button>
+      <button className="bg-black p-3.5 absolute top-5 left-5 rounded-3xl text-sm bg-gradient-to-l from-purple-800 to-blue-800 cursor-pointer" onClick={()=>router.back()}>Go back</button>
       <div className="w-full max-w-xl flex flex-col md:flex-row bg-white rounded-2xl shadow-xl overflow-hidden">
+
         {/* Right side - Login Form */}
         <div className="w-full  p-8 md:p-10 flex flex-col justify-center">
           <div className="text-center mb-2">
@@ -148,7 +144,7 @@ export default function LoginSection() {
           {/* Sign up link */}
           <div className="text-center mt-8">
             <p className="text-sm text-gray-600">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <a
                 href="signup"
                 className="font-medium text-purple-600 hover:text-purple-500 transition"

@@ -1,5 +1,4 @@
-import { ArrowRight, Divide } from "lucide-react";
-import { title } from "process";
+import { ArrowRight} from "lucide-react";
 import React from "react";
 
 const OverView = () => {

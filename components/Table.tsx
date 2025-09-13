@@ -110,7 +110,18 @@ const PricingComparison = () => {
   const [expanded, setExpanded] = useState(false);
   const visibleFeatures = expanded ? featuresTable : featuresTable.slice(0, 5);
 
-  const renderValue = (val, isHighlight = false) => {
+
+  interface PlanHeaderProps {
+    title: string;
+    price: string;
+    period: string;
+    buttonText: string;
+    icon: React.ReactNode;
+    recommended?: boolean;
+    popular?: boolean;
+  }
+
+  const renderValue = (val: boolean | string, isHighlight: boolean = false): React.ReactNode => {
     if (val === true)
       return <Check className="text-green-500 w-5 h-5 mx-auto" />;
     if (val === false) return <X className="text-red-400 w-5 h-5 mx-auto" />;
@@ -134,7 +145,7 @@ const PricingComparison = () => {
     icon,
     recommended = false,
     popular = false,
-  }) => (
+  }: PlanHeaderProps) => (
     <div
       className={`relative p-6 rounded-t-xl ${
         recommended

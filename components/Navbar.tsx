@@ -17,13 +17,13 @@ const navigation = [
         icon: "/nav/image 40.png",
         title: "Do more with cards",
         description: "Freeze & control your cards",
-        href: "/#Manage your Spendings",
+        href: "/#Do More With Smart Cards",
       },
       {
         icon: "/nav/image 39.png",
         title: "Create Invoices",
         description: "Send & track invoices swiftly",
-        href: "/#Do More With Smart Cards",
+        href: "/#Manage your Spendings",
       },
 
       {

@@ -2,19 +2,14 @@
 
 import { useState } from "react";
 import {
-  Eye,
-  EyeOff,
   Mail,
-  Lock,
   ArrowRight,
-  Smartphone,
-  MessageCircle,
+ 
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function SignUpSection() {
-  const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 

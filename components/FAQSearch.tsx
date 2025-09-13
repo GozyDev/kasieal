@@ -1,4 +1,4 @@
-import { Search, MessageCircle, Mail, Phone } from "lucide-react";
+import { Search } from "lucide-react";
 
 export default function FAQSearch() {
   return (
@@ -9,7 +9,7 @@ export default function FAQSearch() {
             Got any <span className="text-white">questions?</span>
           </h1>
           <p className="text-xl text-purple-100 max-w-2xl mx-auto">
-            We're here to assist you with anything related to Kaisel
+            We&apos;re here to assist you with anything related to Kaisel
           </p>
         </div>
 

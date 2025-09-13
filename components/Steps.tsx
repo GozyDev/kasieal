@@ -1,6 +1,6 @@
 "use client";
 
-import { image } from "framer-motion/client";
+
 import { Clock, User, FileText, Shield, Send,  BarChart3, LayoutDashboard, Brain } from "lucide-react";
 
 const steps = [
@@ -19,7 +19,7 @@ const steps = [
     bg:"/Learn/bac2.avif",
     howItWorks: [
       { icon: <Send className="w-5 h-5 text-purple-500" />, text: "Quick and smooth transfers" },
-      { icon: <img src="/Icons 1/Track.svg" className="w-5 h-5 text-purple-500" />, text: "Generate and share invoices" },
+      { icon: <img src="/Icons 1/Track.svg" className="w-5 h-5 text-purple-500" alt="" />, text: "Generate and share invoices" },
       { icon: <BarChart3 className="w-5 h-5 text-purple-500" />, text: "Tracking payments" },
     ],
     time: "3 mins",
