@@ -114,7 +114,7 @@ export function AccordionDemo() {
                       }`}
                     />
                   </div>
-                  <h3 className="text-lg font-medium">{faq.question}</h3>
+                  <h3 className="lg:text-lg font-medium">{faq.question}</h3>
                 </div>
                 <motion.div
                   animate={{ rotate: faq.active ? 180 : 0 }}
@@ -140,10 +140,10 @@ export function AccordionDemo() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6">
+                    <div className="px-6 pb-6 tracking-wide">
                       <div
-                        className={`text-lg ${
-                          faq.active ? "text-white/90" : "text-gray-600"
+                        className={`lg:text-lg ${
+                          faq.active ? "text-white/80" : "text-gray-600"
                         }`}
                       >
                         {faq.answer}
