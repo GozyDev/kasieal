@@ -56,7 +56,7 @@ const articles = [
 
 function Article() {
   return (
-    <section className=" lg:py-[110px] lg:px-[56px] px-[15px] text-black ">
+    <section className="py-[80px] lg:py-[110px] lg:px-[56px] px-[15px] text-black ">
       <div className="max-w-7xl mx-auto space-y-[50px] lg:space-y-[70px]">
         <div className="max-w-[800px] mx-auto space-y-[15px]">
           <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
