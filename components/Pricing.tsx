@@ -77,16 +77,18 @@ const Pricing = () => {
             <div
               key={index}
               onClick={() => setActive(Number(index))}
-              className={`flex items-center gap-6 p-6 rounded-3xl ${
+              className={`flex items-center justify-between gap-6 p-6 rounded-3xl cursor-pointer ${
                 da.active ? " bg-purple-900 text-white" : "bg-none"
               } border border-black/30  `}
             >
-              <div className="w-[52px] h-[52px] bg-purple-100 rounded-full flex items-center justify-center">
-                {da.icon}
-              </div>
-              <div className="flex-1">
-                <p className="text-[16px] font-semibold">{da.title}</p>
-                <p className="text-[12px]">{da.info}</p>
+              <div className="flex items-center gap-3">
+                <div className="w-[52px] h-[52px] bg-purple-100 rounded-full flex items-center justify-center">
+                  {da.icon}
+                </div>
+                <div className="flex-1">
+                  <p className="text-[16px] font-semibold">{da.title}</p>
+                  <p className="text-[12px]">{da.info}</p>
+                </div>
               </div>
               <div className="flex items-center w-max">
                 {da.amount !== "Custom" ? (
