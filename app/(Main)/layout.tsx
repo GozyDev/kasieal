@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="bg-white">
-            <section className="py-[10px] fixed w-full z-50 left-0 ">
+            <section className="py-[10px] fixed w-full z-[999] left-0 ">
               <Navbar />
               <MobileNavbar />
             </section>
