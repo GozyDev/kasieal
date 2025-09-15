@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Kaisel",
     images: [
       {
-        url: "/public/kaiselimage.avif",
+        url: "/kaiselimage.avif",
         width: 1200,
         height: 630,
         alt: "Kaisel preview",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kaisel",
     description: "AI-powered financial tools",
-    images: ["/public/kaiselimage.avif"],
+    images: ["/kaiselimage.png"],
   },
 };
 
