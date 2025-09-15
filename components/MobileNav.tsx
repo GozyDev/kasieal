@@ -112,7 +112,7 @@ const MobileNavbar = () => {
     );
   };
   return (
-    <div className="lg:hidden relative px-6 ">
+    <div className="lg:hidden relative px-3 ">
       <nav className="bg-white rounded-full w-full max-w-7xl  h-[72px] flex text-black items-center justify-between  py-[10px] px-5 ">
         <Link
           href="/"
