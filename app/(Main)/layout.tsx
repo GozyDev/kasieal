@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Kaisel",
     images: [
       {
-        url: "/kaiselimage.avif",
+        url: "/kaiselimage.png",
         width: 1200,
         height: 630,
         alt: "Kaisel preview",
