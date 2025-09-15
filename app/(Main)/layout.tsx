@@ -9,24 +9,31 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Kaisel",
-  description:
-    "Kaisel is a modern fintech concept inspired by Brex and Wise, but built to go a step further.",
-  icons: "/favicon.ico",
+  description: "Manage your finances smarter with Kaisel",
   openGraph: {
     title: "Kaisel",
-    description:
-      "Kaisel is a modern fintech concept inspired by Brex and Wise, but built to go a step further.",
-    siteName: "kaisel",
+    description: "AI-powered financial tools",
+    url: "https://kasieal.vercel.app/",
+    siteName: "Kaisel",
     images: [
       {
-        url: "/kaiselimage.avif",
+        url: "/public/kaiselimage.avif",
         width: 1200,
         height: 630,
-        alt: "Kaisel",
+        alt: "Kaisel preview",
       },
     ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kaisel",
+    description: "AI-powered financial tools",
+    images: ["/public/kaiselimage.avif"],
   },
 };
+
 
 export default function RootLayout({
   children,
