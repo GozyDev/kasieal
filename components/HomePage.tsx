@@ -1,7 +1,7 @@
 import React from "react";
 const HomePage = () => {
   return (
-    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[150px] overflow-hidden px-3">
+    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[150px] overflow-hidden px-4">
       <div className="max-w-[800px] space-y-[30px]  ">
         <div className="">
           <img
