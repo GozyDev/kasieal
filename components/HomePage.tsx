@@ -1,8 +1,8 @@
 import React from "react";
 const HomePage = () => {
   return (
-    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[150px] overflow-hidden px-4">
-      <div className="max-w-[800px] space-y-[30px]  ">
+    <section className="bg-gradient-to-b from-black  via-purple-400  to-white h-full flex flex-col items-center pt-[120px] lg:pt-[150px] overflow-hidden px-4">
+      <div className="max-w-[800px] space-y-[20px] lg:space-y-[30px]  ">
         <div className="">
           <img
             src="/review.png"
@@ -11,10 +11,10 @@ const HomePage = () => {
           />
         </div>
         <div>
-          <h1 className=" text-[40px] md:text-[50px] lg:text-[68px] font-bold text-center lg:leading-[90px]">
+          <h1 className=" text-[40px] md:text-[50px] lg:text-[68px] font-bold text-center leading-[50px] lg:leading-[90px] mb-4">
             Spend, manage, and move Funds
           </h1>
-          <p className="text-center lg:text-[20px] font-medium text-white/80">
+          <p className="text-center lg:text-[20px] font-medium text-white">
             Power your financial operations with next-gen tools built for
             everyday users, freelancers, and modern businesses
           </p>
