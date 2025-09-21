@@ -12,23 +12,23 @@ export default function Footer() {
           <Link
             href="https://x.com/Gozy_Dev"
             target="_blank"
-            className="bg-white p-3 rounded-lg shadow hover:scale-105 transition"
+            className="bg-black p-3 rounded-lg shadow hover:scale-105 transition"
           >
-            <FaXTwitter className="w-7 h-7" />
+            <FaXTwitter className="w-12 h-12 text-white" />
           </Link>
           <Link
             href="#"
             target="_blank"
-            className="bg-white p-3 rounded-lg shadow hover:scale-105 transition"
+            className="bg-purple-500 p-3 rounded-lg shadow hover:scale-105 transition"
           >
-            <FaInstagram className="w-7 h-7 text-purple-500" />
+            <FaInstagram className="w-12 h-12 text-white" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/henrygozy/"
             target="_blank"
-            className="bg-white p-3 rounded-lg shadow hover:scale-105 transition"
+            className="bg-blue-600 p-3 rounded-lg shadow hover:scale-105 transition"
           >
-            <FaLinkedin className="w-7 h-7 text-blue-600" />
+            <FaLinkedin className="w-12 h-12 text-white" />
           </Link>
         </div>
 
@@ -55,6 +55,10 @@ export default function Footer() {
         <div className="">
           <img src="/kaisel.svg" alt="" />
         </div>
+
+        <p className="text-md text-gray-800">
+          2025 Boldshift All right reserved.
+        </p>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { poppins } from "@/lib/font";
+import { poppins , manrope } from "@/lib/font";
 
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased `}>
+      <body className={`${manrope.className} antialiased `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -144,7 +144,7 @@ export const Solution = () => {
           </div>
         </div>
 
-        <div className="lg:h-[400px] flex flex-col lg:flex-row gap-6  text-white">
+        <div className="lg:h-[450px] flex flex-col lg:flex-row gap-6  text-white">
           {data.map((da, index) => (
             <div key={index} className="w-[100%] h-full border  relative">
               <img src={da.img} alt="" className="h-full w-full rounded-3xl" />

@@ -27,19 +27,21 @@ const Support = () => {
           </p>
         </div>
 
-        <div className="space-y-8  ">
+        <div className="space-y-4 relative">
+            <div className="absolute bg-gray-100 z-[10] h-full w-[10px] md:w-[50px] top-0 left-0 shadow-[5px_0px_5px_#f3f4f6]"/>
+            <div className="absolute bg-gray-100 z-[10] h-full w-[10px] md:w-[50px] top-0 right-0 shadow-[-5px_0px_5px_#f3f4f6]"/>
           {/* Row 1: Right → Left */}
           <div className="relative flex overflow-hidden group py-4">
             <div className="flex animate-marquee-left whitespace-nowrap">
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={`row1-${index}`}
-                  className="inline-flex items-center mx-4 md:mx-8 transition-all duration-300 hover:scale-110 flex-shrink-0"
+                  className="inline-flex items-center mx-4 md:mx-4 transition-all duration-300 hover:scale-110 flex-shrink-0"
                 >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={140}
+                    width={110}
                     height={70}
                     className="drop-shadow-xl"
                   />
@@ -54,12 +56,12 @@ const Support = () => {
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={`row2-${index}`}
-                  className="inline-flex items-center mx-4 md:mx-8 transition-all duration-300 hover:scale-110 flex-shrink-0"
+                  className="inline-flex items-center mx-4 md:mx-4 transition-all duration-300 hover:scale-110 flex-shrink-0"
                 >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={140}
+                    width={110}
                     height={70}
                     className="drop-shadow-xl"
                   />

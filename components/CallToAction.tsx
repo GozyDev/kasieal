@@ -13,7 +13,7 @@ const CallToAction = () => {
             Join thousands of businesses and professionals using Kaisel to bank
             smarter, move money faster, and plan ahead with AI-powered insights.
           </p>
-          <div className="flex flex-col lg:flex-row items-center gap-3 justify-center">
+          <div className="flex flex-col lg:flex-row items-center gap-3 justify-center font-medium">
             <button className="py-[15px] px-[25px] text-[16px] bg-white text-purple-900 rounded-full flex items-center gap-3">
               Book a Free Demo
             </button>

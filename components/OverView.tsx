@@ -1,4 +1,6 @@
-import { ArrowRight} from "lucide-react";
+"use client";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import React from "react";
 
 const OverView = () => {
@@ -111,7 +113,16 @@ const OverView = () => {
                     : "flex-col lg:flex-row"
                 }`}
               >
-                <div className="w-full lg:w-1/2 h-full bg-[#ebebfd] rounded-2xl">
+                <motion.div
+                  initial={{
+                    x: Number(view.id) % 2 === 0 ? 90 : -90,
+                    opacity: 0,
+                  }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="w-full lg:w-1/2 h-full bg-[#ebebfd] rounded-2xl"
+                >
                   <video
                     src={view.video}
                     autoPlay
@@ -122,8 +133,18 @@ const OverView = () => {
                     className="w-[90%] h-full mx-auto"
                     aria-hidden="true"
                   />
-                </div>
-                <div className="lg:w-1/2 border  space-y-6">
+                </motion.div>
+
+                <motion.div
+                  initial={{
+                    x: Number(view.id) % 2 === 0 ? -90 : 90,
+                    opacity: 0,
+                  }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="lg:w-1/2 border  space-y-6"
+                >
                   <div className="space-y-4">
                     <h1 className="text-4xl lg:text-[52px] font-semibold text-black/90">
                       {view.title}
@@ -136,13 +157,17 @@ const OverView = () => {
                     <div className="w-1/2 border-r-purple-500 border-2 p-3">
                       <div className="space-y-2">
                         <img src={view.value[0].icon} alt="" />
-                        <p className="text-[16px] lg:text-[20px]">{view.value[0].text}</p>
+                        <p className="text-[16px] lg:text-[20px]">
+                          {view.value[0].text}
+                        </p>
                       </div>
                     </div>
                     <div className="w-1/2  p-3 pl-6">
                       <div className="space-y-2">
                         <img src={view.value[1].icon} alt="" />
-                        <p className="text-[16px] lg:text-[20px]">{view.value[1].text}</p>
+                        <p className="text-[16px] lg:text-[20px]">
+                          {view.value[1].text}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -150,7 +175,7 @@ const OverView = () => {
                     {view.button}
                     <ArrowRight size={20} />
                   </button>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>

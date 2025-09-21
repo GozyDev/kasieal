@@ -3,7 +3,7 @@ const data = [
   {
     id: "1",
     text: (
-      <p className="text-[20px] font-medium text-gray-500 ">
+      <p className="text-[16px] md:text-[20px] font-medium text-gray-500 ">
         <b className="text-black/80">Nova AI</b> warned me about a fuel{" "}
         <b className="text-black/80">price hike</b>, so I stocked up early and
         avoided extra costs...worked like magic.
@@ -29,7 +29,7 @@ const data = [
   {
     id: "3",
     text: (
-      <p className="text-[20px] font-medium text-gray-500 ">
+      <p className="text-[16px] md:text-[20px]  font-medium text-gray-500 ">
         I use Kaisel’s <b className="text-black/80">multi-currency accounts</b>{" "}
         and crypto <b className="text-black/80">wallet</b> daily — switching
         between assets is quick and <b className="text-black/80">secure</b>
@@ -45,7 +45,7 @@ const data = [
   {
     id: "4",
     text: (
-      <p className="text-[20px] font-medium text-gray-500 ">
+      <p className="ttext-[16px] md:text-[20px]  font-medium text-gray-500 ">
         Creating <b className="text-black/80">invoices</b> and receiving
         payments from <b className="text-black/80">international</b> clients has
         never been this easy, <b className="text-black/80">love</b> it here.
@@ -72,7 +72,7 @@ const data = [
   {
     id: "6",
     text: (
-      <p className="text-[20px] font-medium text-gray-500 ">
+      <p className="text-[16px] md:text-[20px]  font-medium text-gray-500 ">
         <b className="text-black/80">Kaisel’s AI</b> forecasting keeps me ahead
         of market changes and helps me make smarter{" "}
         <b className="text-black/80">spending</b> decisions every month
@@ -117,23 +117,23 @@ const Testimonial = () => {
                     <div className=" space-y-[30px] p-3">
                       {da.text}
 
-                      <div className="text-[24px] flex gap-2 items-center">
+                      <div className=" text-[20px] md:text-[24px] flex gap-2 items-center">
                         {da.rate}{" "}
                         <img
                           src={da.rateImg}
                           alt=""
-                          className=" w-[180px] rounded-full object-cover"
+                          className=" w-[110px] md:w-[180px] rounded-full object-cover"
                         />
                       </div>
                       <div className="flex gap-2">
                         <img
                           src={da.revImg}
                           alt=""
-                          className="w-[50px] h-[50px] rounded-full object-cover border-2 border-purple-900"
+                          className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] rounded-full object-cover border-2 border-purple-900"
                         />
                         <div className="">
-                          <p className="text-[20px] font-semibold">{da.name}</p>{" "}
-                          <p className="text-[16px] text-black/50 test">
+                          <p className="text-[16px] md:text-[20px] font-semibold">{da.name}</p>{" "}
+                          <p className="text-[13px] md:text-[16px] text-black/50 test">
                             {da.status}
                           </p>
                         </div>
