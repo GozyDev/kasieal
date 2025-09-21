@@ -109,7 +109,7 @@ const Testimonial = () => {
                 transition={{
                   duration: 0.5,
                   ease: "easeInOut",
-                  delay: idx * 0.1,
+                  delay: idx * 0.03,
                 }}
                 viewport={{ once: true }}
                 key={da.id}

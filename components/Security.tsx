@@ -1,4 +1,6 @@
-;
+'use client'
+
+import { motion } from "framer-motion";
 import React from "react";
 const data = [
   {
@@ -45,11 +47,20 @@ const Security = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  gap-6">
           {data.map((da) => (
-            <div key={da.id} className="px-8 border shadow-lg pb-[32px] rounded-3xl w-[100%] bg-white">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.15 }}
+              viewport={{ once: true }}
+              key={da.id}
+              className="px-8 border shadow-lg pb-[32px] rounded-3xl w-[100%] bg-white"
+            >
               <img src={da.img} alt="" className="w-[202px] mx-auto" />
-              <p  className="text-[20px] font-bold text-center mb-3">{da.title}</p>
+              <p className="text-[20px] font-bold text-center mb-3">
+                {da.title}
+              </p>
               <p className="text-center text-[16px] text-black/60">{da.des}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

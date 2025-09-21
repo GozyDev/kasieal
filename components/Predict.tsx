@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import React from "react";
 
@@ -33,7 +35,13 @@ const Predict = () => {
             />
           </div>
         </div>
-        <div className="lg:w-1/2 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
+          viewport={{ once: true }}
+          className="lg:w-1/2 space-y-6"
+        >
           <div className="space-y-1">
             <p className="text-[15px] text-black/70">
               Nova AI monitors your spending habits and tracks market shifts to
@@ -41,7 +49,7 @@ const Predict = () => {
               economic trends
             </p>
           </div>
-          <div className="h-[350px] relative">
+          <div className=" h-[250px] md:h-[350px] relative">
             <img
               src="/predict/background.avif"
               alt=""
@@ -50,18 +58,18 @@ const Predict = () => {
 
             <div className="absolute flex top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 justify-between w-full px-5 gap-5">
               <div className="bg-white/10 flex justify-center items-center backdrop-blur-sm p-3 rounded-3xl w-1/2">
-                  <img
-                    src="/predict/image 20.png"
-                    alt=""
-                    className=" w-[250px]"
-                  />
+                <img
+                  src="/predict/image 20.png"
+                  alt=""
+                  className=" w-[250px]"
+                />
               </div>
               <div className="bg-white/10 flex justify-center items-center backdrop-blur p-3 rounded-3xl w-1/2">
-                  <img
-                    src="/predict/image 21.png"
-                    alt=""
-                    className=" w-[250px] "
-                  />
+                <img
+                  src="/predict/image 21.png"
+                  alt=""
+                  className=" w-[250px] "
+                />
               </div>
             </div>
           </div>
@@ -79,7 +87,7 @@ const Predict = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
