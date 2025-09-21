@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 const data = [
   {
@@ -100,8 +102,19 @@ const Testimonial = () => {
         </div>
         <div className=" max-w-6xl mx-auto lg:p-6 ">
           <div className="grid lg:grid-cols-2 gap-11 ">
-            {data.map((da) => (
-              <div key={da.id} className="h-full  items-center justify-center">
+            {data.map((da, idx) => (
+              <motion.div
+                initial={{ y: 50, scale: 0 }}
+                whileInView={{ y: 0, scale: 1 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                  delay: idx * 0.1,
+                }}
+                viewport={{ once: true }}
+                key={da.id}
+                className="h-full  items-center justify-center"
+              >
                 {da.img && (
                   <img
                     src={da.img || "/poster"}
@@ -132,7 +145,9 @@ const Testimonial = () => {
                           className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] rounded-full object-cover border-2 border-purple-900"
                         />
                         <div className="">
-                          <p className="text-[16px] md:text-[20px] font-semibold">{da.name}</p>{" "}
+                          <p className="text-[16px] md:text-[20px] font-semibold">
+                            {da.name}
+                          </p>{" "}
                           <p className="text-[13px] md:text-[16px] text-black/50 test">
                             {da.status}
                           </p>
@@ -141,7 +156,7 @@ const Testimonial = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
 
 const data = [
@@ -15,7 +18,10 @@ const data = [
 
 export const Solution = () => {
   return (
-    <section id="solutions" className="py-[50px]  px-[15px] lg:px-[56px] text-black space-y-[50px] lg:space-y-[70px] bg-gray-100">
+    <section
+      id="solutions"
+      className="py-[50px]  px-[15px] lg:px-[56px] text-black space-y-[50px] lg:space-y-[70px] bg-gray-100 overflow-hidden"
+    >
       <div className="max-w-[800px]  mx-auto space-y-[15px]">
         <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
           Smart Solutions for Modern Workstyles
@@ -28,7 +34,13 @@ export const Solution = () => {
       </div>
       <div className="space-y-6">
         <div className="h-max  flex flex-col lg:flex-row  gap-6 border">
-          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white">
+          <motion.div
+            initial={{ y: 50, scale: 0 }}
+            whileInView={{ y: 0, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white"
+          >
             <img
               src="/solution/Pattern.svg"
               alt=""
@@ -69,9 +81,15 @@ export const Solution = () => {
                 className="w-[340px]  absolute bottom-5 left-1/2 -translate-x-1/2"
               ></img>
             </div>
-          </div>
+          </motion.div>
 
-          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden ">
+          <motion.div
+            initial={{ y: 50, scale: 0 }}
+            whileInView={{ y: 0, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden "
+          >
             <img
               src="/solution/Pattern.svg"
               alt=""
@@ -105,9 +123,15 @@ export const Solution = () => {
                 className="w-[390px]  absolute bottom-5 left-1/2 -translate-x-1/2 "
               ></img>
             </div>
-          </div>
+          </motion.div>
 
-          <div className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden">
+          <motion.div
+            initial={{ y: 50, scale: 0 }}
+            whileInView={{ y: 0, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className=" h-[500px]  shadow-lg w-[100%] py-[18px] px-[20px] relative rounded-2xl bg-white overflow-hidden"
+          >
             <div className="absolute aspect-square  right-5 top-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
             <div className="absolute aspect-square  left-4 bottom-0 w-[220px] h-auto bg-[#e1cffa] opacity-90 blur-3xl" />
             <img
@@ -118,7 +142,8 @@ export const Solution = () => {
             <div className="space-y-3 relative ">
               <p className="text-[30px] font-medium">Crypto</p>
               <p className="text-[18px] text-black/80 ">
-                Swap, withdraw, and spend your crypto  with real-time conversions.
+                Swap, withdraw, and spend your crypto with real-time
+                conversions.
               </p>
             </div>
             {
@@ -141,18 +166,32 @@ export const Solution = () => {
                 className="w-[370px]  absolute bottom-5 left-1/2 -translate-x-1/2"
               ></img>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="lg:h-[450px] flex flex-col lg:flex-row gap-6  text-white">
           {data.map((da, index) => (
-            <div key={index} className="w-[100%] h-full border  relative">
+            <motion.div
+              initial={{
+                x: (index + 1) % 2 === 0 ? 90 : -90,
+                opacity: 0,
+              }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              key={index}
+              className="w-[100%] h-full border  relative"
+            >
               <img src={da.img} alt="" className="h-full w-full rounded-3xl" />
               <div className="absolute bottom-0 left-0 p-6">
-                <p className="text-[25px] lg:text-[30px] font-medium ">{da.title}</p>
-                <p className="text-sm lg:text-[18px] tracking-wider">{da.sub}</p>
+                <p className="text-[25px] lg:text-[30px] font-medium ">
+                  {da.title}
+                </p>
+                <p className="text-sm lg:text-[18px] tracking-wider">
+                  {da.sub}
+                </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
