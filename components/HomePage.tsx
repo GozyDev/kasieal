@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 const HomePage = () => {
@@ -34,16 +35,24 @@ const HomePage = () => {
           </label>
         </div>
       </div>
-      <div className="mt-[30px] max-w-[1080] relative">
-        <motion.img
+      <div className="mt-[30px] w-full max-w-[1080px] relative">
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           viewport={{ once: true }}
-          src="/Dashboard/image 3.png"
-          alt="dashboard"
-          className="w-full"
-        ></motion.img>
+          className="w-full h-[500px] "
+        >
+          <Image
+            src="/Dashboard/image 3.webp"
+            alt="dashboard"
+            width={800}
+            height={800}
+            className="w-full h-auto"
+          />
+        </motion.div>
+
+
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}

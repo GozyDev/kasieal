@@ -1,4 +1,4 @@
-import LoginSection from '@/components/LoginSection'
+import LoginSection from '@/components/WaitListClient'
 import React from 'react'
 
 const SignUppage = () => {
