@@ -154,7 +154,7 @@ const Navbar = () => {
           </Link> */}
           <Link href="/WaitList">
             <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer inline-flex items-center gap-2">
-              Jion Waitlist
+              Join Waitlist
             </button>
           </Link>
         </div>
