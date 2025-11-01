@@ -1,7 +1,6 @@
 import React from "react";
 import { articles } from "@/lib/data";
 
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 function Article() {

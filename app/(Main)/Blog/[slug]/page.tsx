@@ -1,3 +1,4 @@
+import MoreAticles from "@/components/MoreAticles";
 import { articles } from "@/lib/data";
 import { notFound } from "next/navigation";
 
@@ -9,7 +10,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   if (!article) return notFound();
 
   return (
-    <div className="max-w-4xl mx-auto px-5 pt-[150px] pb-24 text-neutral-900">
+    <div className="max-w-6xl mx-auto px-5 pt-[150px] pb-24 text-neutral-900">
       {/* HEADER */}
       <div className="flex flex-col gap-2 mb-8">
         <p className="text-sm text-gray-500">
@@ -25,7 +26,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <img
         src={article.image}
         alt={article.title}
-        className="rounded-2xl w-full object-cover shadow-md mb-6"
+        className="rounded-2xl w-full lg:h-[500px] object-cover shadow-md mb-6"
       />
 
       {/* PREAMBLE */}
@@ -68,7 +69,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      
+      <MoreAticles selected={article.slug}/>
     </div>
   );
 }
