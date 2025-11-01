@@ -1,5 +1,5 @@
 "use client";
-import { div } from "framer-motion/client";
+
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";

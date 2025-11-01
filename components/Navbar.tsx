@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronDown, } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 

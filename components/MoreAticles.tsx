@@ -13,9 +13,9 @@ const MoreAticles = ({ selected }: { selected: string }) => {
 
       <div className="space-y-[10px]">
         {moreArticle.map((article, i) => (
-          <Link href={article.slug}>
+          <Link href={article.slug} key={i}>
             <div
-              key={i}
+           
               className="py-[40px] p-[10px]  border border-b-black/10 space-y-[10px] group cursor-pointer relative hover:bg-purple-500/5 rounded"
             >
               <p className="group-hover:text-purple-800">{article.date}</p>
