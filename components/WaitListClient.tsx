@@ -33,6 +33,9 @@ export default function WaitlistCard() {
     setLoading(false);
     setMessage(data.message || data.error);
   };
+
+ 
+
   return (
     <div className="flex justify-center items-center  pt-[135px] pb-[50px] bg-purple-50 p-4">
       <Card className="flex flex-col md:flex-row max-w-4xl rounded-2xl overflow-hidden shadow-2xl bg-[#1E103B] text-white py-0 ">
@@ -75,7 +78,7 @@ export default function WaitlistCard() {
             onClick={handleSubmit}
             className="bg-purple-900 hover:bg-purple-900  w-full mb-4 text-white"
           >
-           {loading ? 'Joining...' : 'Join Waitlist'}
+            {loading ? "Joining..." : "Join Waitlist"}
           </Button>
 
           {message && (

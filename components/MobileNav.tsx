@@ -200,14 +200,9 @@ const MobileNavbar = () => {
                 </ul>
                 {
                   <div className="flex flex-col gap-3">
-                    <Link href="/login">
-                      <button className="   py-[12px] rounded-full text-black/70 cursor-pointer">
-                        Login
-                      </button>
-                    </Link>
-                    <Link href="/signup">
-                      <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
-                        Open An Account
+                    <Link href="/WaitList">
+                      <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer inline-flex items-center gap-2">
+                        Join Waitlist
                       </button>
                     </Link>
                   </div>
