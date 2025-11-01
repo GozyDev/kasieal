@@ -75,7 +75,7 @@ export const articles = [
   {
     date: "August 11, 2025",
     badge: "Remote Work",
-    title: "A Glimpse Into the Daily Lives of Freelancers Who Use Kaiser",
+    title: "A Glimpse Into the Daily Lives of Freelancers Who Use Kaisel",
     author: "Ava Mendes",
     image: "/art/article2.avif",
     slug: "glimpse-daily-lives-freelancers-who-use-kaiser",

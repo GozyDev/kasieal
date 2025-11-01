@@ -53,10 +53,10 @@ const Security = () => {
               transition={{ duration: 0.5, ease: "easeInOut", delay: 0.15 }}
               viewport={{ once: true }}
               key={da.id}
-              className="px-8 border shadow-lg pb-[32px] rounded-3xl w-[100%] bg-white"
+              className="md:px-4 px-8 border shadow-lg pb-[32px] rounded-3xl w-[100%] bg-white"
             >
-              <img src={da.img} alt="" className="w-[202px] mx-auto" />
-              <p className="text-[20px] font-bold text-center mb-3">
+              <img src={da.img} alt="" className="w-[200px] mx-auto" />
+              <p className=" md:text-[17px] xl:text-[20px]  font-bold text-center mb-2 ">
                 {da.title}
               </p>
               <p className="text-center text-[16px] text-black/60">{da.des}</p>
