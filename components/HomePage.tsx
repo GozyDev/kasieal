@@ -35,7 +35,7 @@ const HomePage = () => {
           </label>
         </div>
       </div>
-      <div className="mt-[30px] w-full lg:w-[900px] xl:w-[1080px] border border-amber-950  relative">
+      <div className="mt-[30px] w-full lg:w-[900px] xl:w-[1080px]    relative">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
