@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import { poppins , manrope } from "@/lib/font";
+import { manrope } from "@/lib/font";
 
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";

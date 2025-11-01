@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -147,14 +147,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
-          <Link href="/login">
+          {/* <Link href="/login">
             <button className=" b  py-[12px] px-[12px] rounded-full text-black/70 cursor-pointer text-[18px]">
               Login
             </button>
-          </Link>
-          <Link href="/signup">
-            <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer">
-              Open An Account
+          </Link> */}
+          <Link href="/WaitList">
+            <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer inline-flex items-center gap-2">
+              Jion Waitlist
             </button>
           </Link>
         </div>
