@@ -108,7 +108,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className=" bg-purple-800 rounded-3xl p-4 space-y-5">
+        <div className=" bg-purple-800 rounded-3xl p-4 space-y-5 lg:w-[490px]">
           <div className="flex items-center gap-6 rounded-3xl  text-white ">
             <div className="flex-1">
               <p className="text-[16px]">{data[activeData].title}</p>
