@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const LearnHero = () => {
   return (
@@ -14,10 +15,12 @@ const LearnHero = () => {
             detailed and well explained tips.
           </p>
 
-           <button className="py-[15px] px-[25px] text-[16px] bg-purple-900 text-white rounded-full flex items-center gap-3">
-                    Get Started 
-                    <ArrowRight size={20} />
-                  </button>
+          <PrimaryButton
+            text="Get Started"
+            href="/WaitList"
+            Icon={<ArrowRight />}
+            variant="primary"
+          ></PrimaryButton>
         </div>
         <div className="lg:w-1/2">
           <img

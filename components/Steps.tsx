@@ -1,36 +1,79 @@
 "use client";
 
-
-import { Clock, User, FileText, Shield, Send,  BarChart3, LayoutDashboard, Brain } from "lucide-react";
+import {
+  Clock,
+  User,
+  FileText,
+  Shield,
+  Send,
+  BarChart3,
+  LayoutDashboard,
+  Brain,
+  ArrowRight,
+} from "lucide-react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const steps = [
   {
     title: "Create your account",
-    bg:"/Learn/bac1.avif",
+    bg: "/Learn/bac1.avif",
     howItWorks: [
-      { icon: <User className="w-5 h-5 text-purple-500" />, text: "Filling in necessary information" },
-      { icon: <FileText className="w-5 h-5 text-purple-500" />, text: "Documentation and approval" },
-      { icon: <Shield className="w-5 h-5 text-purple-500" />, text: "Security for user safety" },
+      {
+        icon: <User className="w-5 h-5 text-purple-500" />,
+        text: "Filling in necessary information",
+      },
+      {
+        icon: <FileText className="w-5 h-5 text-purple-500" />,
+        text: "Documentation and approval",
+      },
+      {
+        icon: <Shield className="w-5 h-5 text-purple-500" />,
+        text: "Security for user safety",
+      },
     ],
     time: "2 mins",
   },
   {
     title: "Sending & Receiving",
-    bg:"/Learn/bac2.avif",
+    bg: "/Learn/bac2.avif",
     howItWorks: [
-      { icon: <Send className="w-5 h-5 text-purple-500" />, text: "Quick and smooth transfers" },
-      { icon: <img src="/Icons 1/Track.svg" className="w-5 h-5 text-purple-500" alt="" />, text: "Generate and share invoices" },
-      { icon: <BarChart3 className="w-5 h-5 text-purple-500" />, text: "Tracking payments" },
+      {
+        icon: <Send className="w-5 h-5 text-purple-500" />,
+        text: "Quick and smooth transfers",
+      },
+      {
+        icon: (
+          <img
+            src="/Icons 1/Track.svg"
+            className="w-5 h-5 text-purple-500"
+            alt=""
+          />
+        ),
+        text: "Generate and share invoices",
+      },
+      {
+        icon: <BarChart3 className="w-5 h-5 text-purple-500" />,
+        text: "Tracking payments",
+      },
     ],
     time: "3 mins",
   },
   {
     title: "Dashboards & More",
-    bg:'/Learn/bac3.avif',
+    bg: "/Learn/bac3.avif",
     howItWorks: [
-      { icon: <LayoutDashboard className="w-5 h-5 text-purple-500" />, text: "Your Personalized dashboard" },
-      { icon: <BarChart3 className="w-5 h-5 text-purple-500" />, text: "Smart insights at a glance" },
-      { icon: <Brain className="w-5 h-5 text-purple-500" />, text: "AI-powered expense forecasting" },
+      {
+        icon: <LayoutDashboard className="w-5 h-5 text-purple-500" />,
+        text: "Your Personalized dashboard",
+      },
+      {
+        icon: <BarChart3 className="w-5 h-5 text-purple-500" />,
+        text: "Smart insights at a glance",
+      },
+      {
+        icon: <Brain className="w-5 h-5 text-purple-500" />,
+        text: "AI-powered expense forecasting",
+      },
     ],
     time: "3 mins",
   },
@@ -46,11 +89,16 @@ export default function StepsCards() {
             className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
           >
             {/* Fake image header (replace with <img /> if you have images) */}
-            <div className={`h-45  bg-cover bg-center`}   style={{ backgroundImage: `url(${step.bg})` }}/>
+            <div
+              className={`h-45  bg-cover bg-center`}
+              style={{ backgroundImage: `url(${step.bg})` }}
+            />
 
             {/* Card body */}
             <div className="p-6 flex-1 flex flex-col">
-              <h2 className="text-xl font-semibold mb-2 text-black">{step.title}</h2>
+              <h2 className="text-xl font-semibold mb-2 text-black">
+                {step.title}
+              </h2>
               <p className="text-gray-500 mb-4">How it works:</p>
 
               <ul className="space-y-3 flex-1">
@@ -68,9 +116,12 @@ export default function StepsCards() {
                   <Clock className="w-4 h-4" />
                   {step.time}
                 </div>
-                <button className="px-4 py-2 bg-purple-900 text-white rounded-full text-sm hover:bg-purple-700 transition">
-                  Play Now →
-                </button>
+                <PrimaryButton
+                  text="Play now →"
+                  href="/WaitList"
+                  variant="primary"
+                  className="text-sm px-0"
+                ></PrimaryButton>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const Predict = () => {
   return (
@@ -79,12 +80,18 @@ const Predict = () => {
               to begin?
             </p>
             <div className="gap-3 flex flex-col-reverse lg:flex-row lg:items-center ">
-              <button className="text-white bg-purple-900 py-[10px] px-[20px] rounded-full text-[16px] flex items-center justify-center gap-2 ">
-                Start Using Nova AI <ArrowRight size={20} />
-              </button>{" "}
-              <button className="text-purple-900 border border-black bg-purple-transparent py-[10px] px-[20px] rounded-full text-[16px]">
-                Get Nova Insight Now
-              </button>
+              <PrimaryButton
+                text="Start Using Nova Now"
+                href="/WaitList"
+                Icon={<ArrowRight />}
+              ></PrimaryButton>
+              <PrimaryButton
+                text="Get Nova Insight Now"
+                href="/WaitList"
+                Icon={<ArrowRight />}
+                className="bg-transparent"
+                variant="outline"
+              ></PrimaryButton>
             </div>
           </div>
         </motion.div>

@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const BlogHero = () => {
   return (
@@ -21,10 +22,13 @@ const BlogHero = () => {
             personal spending
           </p>
 
-          <button className="py-[15px] px-[25px] text-[16px] bg-purple-900 text-white rounded-full flex items-center gap-3 ">
-            Read Full Blog
-            <ArrowRight size={20} />
-          </button>
+          <PrimaryButton
+            text="Read full Blog"
+            href="/WaitList"
+            variant="outline"
+            Icon={<ArrowRight size={20} />}
+            className="text-sm px-0"
+          ></PrimaryButton>
         </div>
         <div className="lg:w-1/2">
           <img

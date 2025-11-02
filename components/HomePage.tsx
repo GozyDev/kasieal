@@ -2,9 +2,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 const HomePage = () => {
   return (
-    <section className="bg-gradient-to-b from-black  via-purple-400  to-white/80 h-full flex flex-col items-center pt-[120px] lg:pt-[150px] overflow-hidden px-4  ">
+    <section className="bg-gradient-to-b from-black  via-[#9478db]  to-white/80 h-full flex flex-col items-center pt-[120px] lg:pt-[150px] overflow-hidden px-4  ">
       <div className="max-w-[800px] space-y-[20px] lg:space-y-[30px]  ">
         <div className="">
           <img
@@ -24,9 +25,11 @@ const HomePage = () => {
         </div>
         <div className=" h-[70px] lg:w-[63%] mx-auto relative">
           <label htmlFor="" className="">
-            <button className="absolute z-10 text-[12px] lg:text-[18px] bg-purple-900 right-[15px] top-1/2 -translate-y-1/2 py-[12px] px-[24px] rounded-full">
-              Open An Account
-            </button>
+            <PrimaryButton
+              text="Open An Account"
+              href="/WaitList"
+              className="absolute right-[15px] top-1/2 -translate-y-1/2"
+            ></PrimaryButton>
             <input
               type="text"
               placeholder="Enoch@example.com"

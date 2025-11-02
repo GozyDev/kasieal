@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const OverView = () => {
   const overview = [
@@ -171,10 +172,11 @@ const OverView = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="py-[15px] px-[25px] text-[16px] bg-purple-900 text-white rounded-full flex items-center gap-3">
-                    {view.button}
-                    <ArrowRight size={20} />
-                  </button>
+                  <PrimaryButton
+                    text={view.button}
+                    Icon={<ArrowRight />}
+                    href="/WaitList"
+                  ></PrimaryButton>
                 </motion.div>
               </div>
             ))}

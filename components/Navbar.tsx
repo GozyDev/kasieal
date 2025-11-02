@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import PrimaryButton from "./ui/ButtonComp";
 
 const navigation = [
   {
@@ -155,11 +156,7 @@ const Navbar = () => {
               Login
             </button>
           </Link> */}
-          <Link href="/WaitList">
-            <button className="text-[12px] lg:text-[18px] bg-purple-900  py-[12px] px-[24px] rounded-full text-white cursor-pointer inline-flex items-center gap-2">
-              Join Waitlist
-            </button>
-          </Link>
+          <PrimaryButton text="Join Waitlist" href="/WaitList"/>
         </div>
       </nav>
     </div>
