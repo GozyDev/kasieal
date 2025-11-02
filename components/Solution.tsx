@@ -169,7 +169,7 @@ export const Solution = () => {
           </motion.div>
         </div>
 
-        <div className="lg:h-[450px] flex flex-col lg:flex-row gap-6  text-white">
+        <div className="md:h-[300px] lg:h-[400px] flex flex-col lg:flex-row gap-6  text-white">
           {data.map((da, index) => (
             <motion.div
               initial={{

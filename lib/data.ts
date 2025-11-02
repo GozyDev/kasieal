@@ -90,12 +90,12 @@ export const articles = [
           "Freelancers manage clients, invoices, tax obligations, and personal budgets simultaneously. Using a single platform that centralizes invoices, receipts, and reporting reduces friction and helps maintain consistent cash flow."
       },
       {
-        title: "1) Morning check: outstanding invoices & client status",
+        title: "Morning check: outstanding invoices & client status",
         content:
           "Start the day by scanning for late invoices, new payments, and client messages. Automated reminders are sent to late payers without manual effort."
       },
       {
-        title: "2) Midday: issue invoices & capture expenses",
+        title: "Midday: issue invoices & capture expenses",
         content:
           "Invoice templates let freelancers create professional invoices in seconds. Mobile receipt capture logs expenses in real time with attached proof for tax deductions.",
         bullets: [
@@ -105,12 +105,12 @@ export const articles = [
         ]
       },
       {
-        title: "3) Afternoon: reconcile payments and update forecasts",
+        title: "Afternoon: reconcile payments and update forecasts",
         content:
           "Payments are matched automatically to invoices, and a snapshot view helps plan cashflow for the coming weeks—critical for freelancers who live project-to-project."
       },
       {
-        title: "4) Evening: monthly reports and tax prep",
+        title: "Evening: monthly reports and tax prep",
         content:
           "Monthly summaries compile income, deductible expenses, and profit by client, simplifying end-of-quarter or year tax preparation."
       },
@@ -142,17 +142,17 @@ export const articles = [
           "Millionaires often rely on repeatable systems: automated transfers, tax-aware investments, and multi-account budgeting. Replicating the system is more impactful than copying specific investments."
       },
       {
-        title: "1) Automation of savings and investments",
+        title: "Automation of savings and investments",
         content:
           "Set up automated rules to transfer money to savings and investment accounts right after paydays. Automation prevents forgetfulness and enforces discipline."
       },
       {
-        title: "2) Strategic account separation",
+        title: "Strategic account separation",
         content:
           "Use sub-accounts or separate ledgers for operating cash, taxes, and long-term investments to reduce mixing and improve visibility."
       },
       {
-        title: "3) Fractional investing & rebalancing automation",
+        title: "Fractional investing & rebalancing automation",
         content:
           "Micro-investing and automatic rebalancing let you keep target allocations without manual intervention.",
         bullets: [
@@ -162,12 +162,12 @@ export const articles = [
         ]
       },
       {
-        title: "4) Continuous tax planning",
+        title: "Continuous tax planning",
         content:
           "Track deductible expenses in real time and forecast liabilities monthly to avoid surprises during tax season."
       },
       {
-        title: "5) Subscription and expense audits",
+        title: "Subscription and expense audits",
         content:
           "Conduct regular audits of recurring charges to cut waste. High net worth often means many subscriptions—cut the ones that don’t deliver ROI."
       },
@@ -199,12 +199,12 @@ export const articles = [
           "Modern platforms combine encryption, tokenization, and behavioral analytics to prevent fraud. Still, the human factor—password hygiene, device security, and vigilance—remains critical."
       },
       {
-        title: "1) Encryption and secure channels",
+        title: "Encryption and secure channels",
         content:
           "Transport-level encryption (TLS) ensures data in transit is unreadable. Tokenization hides raw card data from merchants and reduces exposure."
       },
       {
-        title: "2) Authentication and identity verification",
+        title: "Authentication and identity verification",
         content:
           "Multi-factor authentication (MFA) and risk-based authentication help detect stolen credentials before account compromise occurs.",
         bullets: [
@@ -213,12 +213,12 @@ export const articles = [
         ]
       },
       {
-        title: "3) Fraud detection & monitoring",
+        title: "Fraud detection & monitoring",
         content:
           "Real-time models score transactions, flagging suspicious patterns for immediate review. For businesses, role-based access and approval flows reduce insider risk."
       },
       {
-        title: "4) Recovery and incident response",
+        title: "Recovery and incident response",
         content:
           "Rapid freeze/rollback mechanisms and clear dispute processes are essential—know your bank’s SLA for incidents and keep evidence for claims."
       },
@@ -250,17 +250,17 @@ export const articles = [
           "AI is excellent at processing historic data, identifying patterns, and producing repeatable forecasts. Humans provide context, values, and strategy—especially when one decision affects many dimensions."
       },
       {
-        title: "1) Forecasting with large data sets",
+        title: "Forecasting with large data sets",
         content:
           "AI can run many scenarios quickly using transactional and external data, helping surface probable cashflow outcomes and stress scenarios."
       },
       {
-        title: "2) Anomaly detection and risk monitoring",
+        title: "Anomaly detection and risk monitoring",
         content:
           "Real-time monitoring spots deviations that humans would miss in spreadsheet reviews—automatically marking transactions for review."
       },
       {
-        title: "3) Personalized nudges & automation",
+        title: "Personalized nudges & automation",
         content:
           "AI can suggest small behavioral nudges—like delaying a payment or reallocating cash—that improve financial health while remaining unobtrusive.",
         bullets: [
@@ -269,7 +269,7 @@ export const articles = [
         ]
       },
       {
-        title: "4) Limits: context, ethics, and one-off judgement",
+        title: "Limits: context, ethics, and one-off judgement",
         content:
           "AI lacks long-term strategic context and can propagate bias unless guided by good data and guardrails. Use human review when stakes or ambiguity are high."
       },
@@ -301,17 +301,17 @@ export const articles = [
           "Fintech is moving toward composable services—APIs that let companies plug in payments, accounts, and credit—so product teams can build financial features quickly without heavy infrastructure."
       },
       {
-        title: "1) Open banking & API-led finance",
+        title: "Open banking & API-led finance",
         content:
           "Open banking APIs enable secure data sharing and account-level operations that previously required complex integrations."
       },
       {
-        title: "2) Embedded payments & checkout optimization",
+        title: "Embedded payments & checkout optimization",
         content:
           "Embedding payments inside apps and platforms reduces friction and increases conversion—developers can add rails with a few API calls."
       },
       {
-        title: "3) Real-time underwriting & credit via AI",
+        title: "Real-time underwriting & credit via AI",
         content:
           "AI models that use alternative data and real-time cashflow allow faster and fairer credit decisions for small businesses and consumers.",
         bullets: [
@@ -320,7 +320,7 @@ export const articles = [
         ]
       },
       {
-        title: "4) Risk, compliance & responsible innovation",
+        title: "Risk, compliance & responsible innovation",
         content:
           "As features accelerate, compliance and risk controls must be integral. Build with privacy, auditability, and monitoring in mind."
       },

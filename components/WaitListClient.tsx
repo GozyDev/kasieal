@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { ChangeEvent, useState } from "react";
+import Link from "next/link";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function WaitlistCard() {
   const [message, setMessage] = useState("");
@@ -33,8 +35,6 @@ export default function WaitlistCard() {
     setLoading(false);
     setMessage(data.message || data.error);
   };
-
- 
 
   return (
     <div className="flex justify-center items-center  pt-[135px] pb-[50px] bg-purple-50 p-4">
@@ -85,36 +85,44 @@ export default function WaitlistCard() {
             <p className="mt-4 text-center text-sm text-gray-600">{message}</p>
           )}
 
-          {/* <p className="text-gray-400 text-xs mb-3">
+          <p className="text-gray-400 text-xs mb-3">
             Follow us on socials for early product drops and updates.
-          </p> */}
+          </p>
 
-          {/* <div className="flex gap-3">
-            <Button
-              variant="outline"
-              className="bg-white text-black flex items-center gap-2"
-            >
-              <Image
-                src="/twitter-icon.png"
-                alt="Twitter"
-                width={20}
-                height={20}
-              />{" "}
-              Twitter X
-            </Button>
-            <Button
-              variant="outline"
-              className="bg-white text-black flex items-center gap-2"
-            >
-              <Image
-                src="/linkedin-icon.png"
-                alt="LinkedIn"
-                width={20}
-                height={20}
-              />{" "}
-              LinkedIn
-            </Button>
-          </div> */}
+          {
+            <div className="flex gap-3 w-full">
+              <Link
+                href="https://www.linkedin.com/in/henrygozy/"
+                target="_blank"
+                className="flex-1"
+              >
+                <button className="flex gap-2 items-center bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer">
+                  <Image
+                    src="/Social/x.png"
+                    alt="linkedIn"
+                    width={30}
+                    height={30}
+                  ></Image>{" "}
+                  Twitter x
+                </button>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/henrygozy/"
+                target="_blank"
+                className="flex-1"
+              >
+                <button className="flex gap-2 items-center bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer ">
+                  <Image
+                    src="/Social/linkedIn.png"
+                    alt="linkedIn"
+                    width={30}
+                    height={30}
+                  ></Image>{" "}
+                  LinkedIn
+                </button>
+              </Link>
+            </div>
+          }
         </CardContent>
       </Card>
     </div>

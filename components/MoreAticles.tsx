@@ -9,7 +9,7 @@ const MoreAticles = ({ selected }: { selected: string }) => {
 
   return (
     <div className="mt-[200px]">
-      <h2 className="text-5xl font-bold mb-6">Blogs You’ll Find Useful</h2>
+      <h2 className="text-5xl font-bold mb-6">More Blogs</h2>
 
       <div className="space-y-[10px]">
         {moreArticle.map((article, i) => (

@@ -1,4 +1,4 @@
-import { ChevronDown, } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -13,17 +13,18 @@ const navigation = [
         description: "Handle transactions with ease",
         href: "/#Send & Receive Globally",
       },
-      {
-        icon: "/nav/image 40.png",
-        title: "Do more with cards",
-        description: "Freeze & control your cards",
-        href: "/#Do More With Smart Cards",
-      },
+
       {
         icon: "/nav/image 39.png",
         title: "Create Invoices",
         description: "Send & track invoices swiftly",
         href: "/#Manage your Spendings",
+      },
+      {
+        icon: "/nav/image 40.png",
+        title: "Do more with cards",
+        description: "Freeze & control your cards",
+        href: "/#Do More With Smart Cards",
       },
 
       {
@@ -40,7 +41,7 @@ const navigation = [
     subNav: [
       {
         icon: "/nav/image 43.png",
-        title: "Kasiel Learn",
+        title: "Kaisel Learn",
         description: "Learn to use Kasiel in minute",
         href: "/Learn",
       },
@@ -63,7 +64,7 @@ const navigation = [
     subNav: [
       {
         icon: "/nav/image 44.png",
-        title: "Kasiel Blog",
+        title: "Kaisel Blog",
         description: "Read our Latest article",
         href: "/Blog",
       },
@@ -118,7 +119,7 @@ const Navbar = () => {
                     <div
                       className={`grid ${
                         nav.subNav.length > 2 ? "grid-cols-2" : "grid-cols-1"
-                      }  bg-white h-full w-full p-6 rounded-3xl shadow-2xl`}
+                      }  bg-white h-full w-full p-3 px-6 rounded-3xl shadow-2xl`}
                     >
                       {nav.subNav.map((sub, index) => (
                         <Link href={sub.href} key={index}>
@@ -127,11 +128,13 @@ const Navbar = () => {
                             className="p-4 hover:bg-gray-100  rounded-2xl flex gap-3"
                           >
                             <div className="w-[40px] h-[30px] flex items-center justify-center border border-black/20 rounded">
-                              <img src={sub.icon} alt="" className="w-[24px]" />
+                              <img src={sub.icon} alt="" className="w-[20px]" />
                             </div>
                             <div>
-                              <p className="font-semibold">{sub.title}</p>
-                              <p className="text-black/70 text-sm">
+                              <p className="font-semibold text-[15px]">
+                                {sub.title}
+                              </p>
+                              <p className="text-black/70 text-[13px]">
                                 {sub.description}
                               </p>
                             </div>
