@@ -73,7 +73,7 @@ const navigation = [
       {
         icon: "/nav/image 45.png",
         title: "FAQs",
-        description: "Answers to your quwstion",
+        description: "Answers to your que stion",
         href: "/Faqs",
       },
     ],

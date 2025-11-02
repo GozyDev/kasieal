@@ -120,7 +120,7 @@ export default function StepsCards() {
                   text="Play now →"
                   href="/WaitList"
                   variant="primary"
-                  className="text-sm px-0"
+                  className="!text-[10px] !p-2 !px-[10px]"
                 ></PrimaryButton>
               </div>
             </div>
