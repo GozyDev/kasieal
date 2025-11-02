@@ -5,13 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { ChangeEvent, useState } from "react";
 import Link from "next/link";
-import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
 export default function WaitlistCard() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [Userdata, setaData] = useState<{ name: string; email: string }>({
-    name: "",
+  const [Userdata, setaData] = useState<{ email: string }>({
     email: "",
   });
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -61,12 +58,6 @@ export default function WaitlistCard() {
 
           <div className="flex flex-col gap-3 mb-4">
             <Input
-              placeholder="Name"
-              onChange={handleChange}
-              className="bg-white text-white"
-              id="name"
-            />
-            <Input
               placeholder="Work email"
               onChange={handleChange}
               className="bg-white text-white"
@@ -82,7 +73,7 @@ export default function WaitlistCard() {
           </Button>
 
           {message && (
-            <p className="mt-4 text-center text-sm text-gray-600">{message}</p>
+            <p className="my-2 text-center text-sm text-gray-600">{message}</p>
           )}
 
           <p className="text-gray-400 text-xs mb-3">
