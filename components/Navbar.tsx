@@ -19,7 +19,7 @@ const navigation = [
         icon: "/nav/image 39.png",
         title: "Create Invoices",
         description: "Send & track invoices swiftly",
-        href: "/#Manage your Spendings",
+        href: "/#Send Professional Invoices With Kaisel",
       },
       {
         icon: "/nav/image 40.png",
@@ -32,7 +32,7 @@ const navigation = [
         icon: "/nav/image 41.png",
         title: "Manage your spendings",
         description: "Breakdown your expenses",
-        href: "/#Send Professional Invoices With Kaisel",
+        href: "/#Manage your Spendings",
       },
     ],
   },
@@ -73,7 +73,7 @@ const navigation = [
       {
         icon: "/nav/image 45.png",
         title: "FAQs",
-        description: "Answers to your que stion",
+        description: "Answers to your question",
         href: "/Faqs",
       },
     ],
@@ -126,7 +126,7 @@ const Navbar = () => {
                         <Link href={sub.href} key={index}>
                           <div
                             key={index}
-                            className="p-4 hover:bg-gray-100  rounded-2xl flex gap-3"
+                            className="p-4 hover:bg-gray-100  rounded-2xl flex items-center gap-3"
                           >
                             <div className="w-[40px] h-[30px] flex items-center justify-center border border-black/20 rounded">
                               <img src={sub.icon} alt="" className="w-[20px]" />
@@ -156,7 +156,7 @@ const Navbar = () => {
               Login
             </button>
           </Link> */}
-          <PrimaryButton text="Join Waitlist" href="/WaitList"/>
+          <PrimaryButton text="Join Waitlist" href="/WaitList" />
         </div>
       </nav>
     </div>
