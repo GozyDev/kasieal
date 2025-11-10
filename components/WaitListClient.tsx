@@ -75,7 +75,7 @@ export default function WaitlistCard() {
           </Button>
 
           {message && (
-            <p className="my-2 text-center text-sm text-gray-600">{message}</p>
+            <p className="my-2 text-center text-sm text-green-600">{message}</p>
           )}
           {errormessage && (
             <p className="my-2 text-center text-sm text-red-600">

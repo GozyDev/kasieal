@@ -7,6 +7,7 @@ const LearnHero = () => {
     <section className="text-black  px-[15px] md:[20px] lg:px-[56px] py-[110px] pt-[150px]">
       <div className="flex flex-col lg:flex-row  items-center   mx-auto gap-6">
         <div className="lg:max-w-1/2 mx-auto space-y-[15px] md:px-0 lg:px- ">
+        <div className="p-3 bg-[#412188]/30 rounded-full w-max">In Beta</div>
           <h1 className="text-4xl lg:text-[52px] font-semibold">
             Learn How to Use Kaisel In Minutes
           </h1>

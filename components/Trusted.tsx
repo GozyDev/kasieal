@@ -11,17 +11,12 @@ const Trusted = () => {
 
   // Create enough duplicates for seamless looping
   const duplicatedLogos = useMemo(() => {
-    return [...logos, ...logos, ...logos, ...logos];
+    return [...logos, ...logos];
   }, [logos]);
 
   return (
     <section className="py-16  bg-gradient-to-b from-gray-50 to-white overflow-hidden px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-12 md:mb-16">
-          Trusted by <span className="text-purple-800">15,000+</span> businesses
-          worldwide
-        </h2>
-
         <div className="space-y-8  ">
           {/* Row 1: Right → Left */}
           <div className="relative flex overflow-hidden group py-4">

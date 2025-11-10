@@ -120,7 +120,7 @@ export const Solution = () => {
                 alt="baner"
                 width={100}
                 height={100}
-                className="w-[390px]  absolute bottom-5 left-1/2 -translate-x-1/2 "
+                className="w-[95%]  absolute bottom-0 left-1/2 -translate-x-1/2 "
               ></img>
             </div>
           </motion.div>

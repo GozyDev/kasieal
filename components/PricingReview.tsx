@@ -1,4 +1,5 @@
 import React from "react";
+import TestimonialReview from "./TestimonialReview";
 const items = [
   {
     image: "/Price/image 31.png",
@@ -25,20 +26,7 @@ const PricingReview = () => {
           Take a look at the positive stories from users who pay for kaisel
         </p>
       </div>
-      <div className="flex items-center justify-center  p-6 text-black">
-        <div className="grid md:grid-cols-2 gap-8 max-w-7xl w-full">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className=" bg-white space-y-[10px] rounded-3xl shadow-lg"
-            >
-              <div className="flex items-center gap-1 ">
-                <img src={item.image} alt="" className="" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+     <TestimonialReview/>
     </section>
   );
 };

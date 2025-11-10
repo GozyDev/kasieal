@@ -10,7 +10,7 @@ const OverView = () => {
       id: "1",
       title: "Send & Receive Globally",
       description:
-        "Handle international transactions with ease—whether you're paying a team abroad or receiving from global clients.",
+        "Handle international transactions with ease, whether you're paying a team abroad or receiving from global clients.",
       value: [
         {
           text: "Real-time currency conversion with live  rates",
@@ -32,7 +32,7 @@ const OverView = () => {
       id: "2",
       title: "Do More With Smart Cards",
       description:
-        "Issue secure virtual or physical cards for teams or personal use—control where, when, and how they spend.",
+        "Issue secure virtual or physical cards for teams or personal use. Control where, when, and how they spend.",
       value: [
         {
           text: "Freeze, unfreeze, or delete cards instantly",
@@ -73,7 +73,7 @@ const OverView = () => {
       id: "4",
       title: "Send Professional Invoices With Kaisel",
       description:
-        "Send branded invoices in minutes, track payments, and get paid faster — all with Kaisel.",
+        "Send branded invoices in minutes, track payments, and get paid faster, all with Kaisel.",
       value: [
         {
           text: "Add your business details and preferred currency",

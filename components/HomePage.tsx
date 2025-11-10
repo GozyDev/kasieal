@@ -65,7 +65,7 @@ const HomePage = () => {
           <img
             src="/Dashboard/mon lim.png"
             alt=""
-            className=" drop-shadow-[5px_10px_5px_rgba(89,22,139,0.2)] "
+            className=" drop-shadow-[0px_0px_50px_rgba(89,22,139,0.3)] "
           />
         </motion.div>
         <motion.div
@@ -78,7 +78,7 @@ const HomePage = () => {
           <img
             src="/Dashboard/card debit.png"
             alt=""
-            className="drop-shadow-[5px_10px_5px_rgba(89,22,139,0.2)]"
+            className="drop-shadow-[0px_0px_50px_rgba(89,22,139,0.3)] "
           />
         </motion.div>
         <motion.div
@@ -91,7 +91,7 @@ const HomePage = () => {
           <img
             src="/Dashboard/Nova.png"
             alt=""
-            className="drop-shadow-[5px_10px_5px_rgba(89,22,139,0.3)]"
+            className="drop-shadow-[0px_0px_50px_rgba(89,22,139,0.3)]"
           />
         </motion.div>
         <motion.div
@@ -104,7 +104,7 @@ const HomePage = () => {
           <img
             src="/Dashboard/invoice.png"
             alt=""
-            className="w-full drop-shadow-[5px_10px_5px_rgba(89,22,139,0.2)]"
+            className="w-full drop-shadow-[0px_0px_50px_rgba(89,22,139,0.3)]"
           />
         </motion.div>
       </div>

@@ -39,7 +39,7 @@ const data = [
     ),
     rate: "4.5",
     rateImg: "/tes/image 23.png",
-    name: "Marcus Lewis",
+    name: "David M",
     img: "",
     revImg: "/tes/tes 3.avif",
     status: "Crypto Trader",
@@ -55,7 +55,7 @@ const data = [
     ),
     rate: "5.0",
     rateImg: "/tes/image 22.png",
-    name: "David Brooks",
+    name: "Olamide Matthew",
     img: "",
     revImg: "/tes/tes 4.avif",
     status: "Web Developer",
@@ -82,7 +82,7 @@ const data = [
     ),
     rate: "5.0",
     rateImg: "/tes/image 22.png",
-    name: "Lydia Chen",
+    name: "Tyrone",
     img: "",
     revImg: "/tes/tes 6.avif",
     status: "E-commerce Owner",
@@ -94,10 +94,11 @@ const Testimonial = () => {
       <div className="space-y-[20px] lg:space-y-[40px]">
         <div className="max-w-[800px] mx-auto space-y-[15px] ">
           <h2 className="text-4xl lg:text-[52px] font-semibold text-center">
-            What Our Users Say
+            Hear from Our Early Testers
           </h2>
           <p className="ttext-[15px] lg:text-[20px] text-center text-black/80">
-            Real stories from people who use Kaisel everyday
+            Even in beta, our testers and early supporters are already seeing
+            the power of Kaisel
           </p>
         </div>
         <div className=" max-w-6xl mx-auto lg:p-6 ">
@@ -139,11 +140,6 @@ const Testimonial = () => {
                         />
                       </div>
                       <div className="flex gap-2">
-                        <img
-                          src={da.revImg}
-                          alt=""
-                          className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] rounded-full object-cover border-2 border-purple-900"
-                        />
                         <div className="">
                           <p className="text-[16px] md:text-[20px] font-semibold">
                             {da.name}

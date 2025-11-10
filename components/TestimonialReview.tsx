@@ -27,28 +27,39 @@ const TestimonialReview = () => {
     <div className="py-[80px] flex items-center justify-center bg-gradient-to-b from-purple-100 to-white p-6 text-black">
       <div className="grid md:grid-cols-2 gap-8 max-w-7xl w-full">
         {items.map((item, index) => (
-          <div key={index} className="py-[24] px-[32px] bg-white space-y-[10px] rounded-3xl shadow-lg">
-            <div>
+          <div
+            key={index}
+            className="py-[24] px-[32px] bg-gradient-to-tr from-purple-800 to-blue-800  text-white space-y-[20px] rounded-3xl shadow-lg"
+          >
+            <div className="flex justify-between">
+              <img
+                src="/tes/image 68.png"
+                alt=""
+                className="w-[35px] h-[30px]"
+              />
               <img
                 src="/tes/image 22.png"
                 alt=""
-                className="rounded-full w-[170px] object-cover ml-auto"
-              />
-               <img
-                src="/Learn/image 26.png"
-                alt=""
-                className="w-[30px] object-cover "
+                className="rounded-full w-[170px] object-cover"
               />
             </div>
-            <div className="flex items-center gap-1 ">
-              <p className="flex-1 text-sm text-black/70">{item.text}</p>
+
+            <div className="flex flex-col  gap-1 ">
+              <p className="flex-1 text-sm  text-white/90">{item.text}</p>
+            </div>
+            <div className="flex gap-2 items-center">
               <img
-                src={item.image}
+                src='/tes/userIcon.png'
                 alt=""
-                className="rounded-full w-[81px] h-[81px] object-cover"
+                className=" w-[69px] h-[69px] "
               />
+              <div>
+                <p className="font-bold text-[16px]">Anonymous</p>
+                <p className="text-sm text-white/90">
+                  Early Access Testing Program for Kaisel
+                </p>
+              </div>
             </div>
-            <p className="font-semibold text-[20px]">{item.name}</p>
           </div>
         ))}
       </div>

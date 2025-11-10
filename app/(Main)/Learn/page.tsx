@@ -8,7 +8,7 @@ const Learnpage = () => {
     <>
       <LearnHero/>
       <StepsCards/>
-      <TestimonialReview/>
+      
     </>
   );
 };
