@@ -1,24 +1,16 @@
-import React from "react";
+
 const items = [
   {
-    name: "Daniel O.",
-    text: "I was surprised at how simple the tutorials were. In less than 10 minutes, I was already navigating my dashboard like a pro",
-    image: "/Learn/tes1.avif",
+    text: "Love the pricing layout, but most of all, I love the concept behind the pricing table breakdowns which explained what I will be getting under each plan in detail.",
   },
   {
-    name: "Hannah K.",
-    text: "The step-by-step guide made everything clear. I didn’t feel overwhelmed at all — Kaisel Learn really makes it easy.",
-    image: "/Learn/tes2.avif",
+    text: "The early access plan gives great value for what Kaisel offers. Seems like a  good fit for me, and i’m excited to see future tiers!",
   },
   {
-    name: "Grace N.",
-    text: "Usually platforms take weeks to get used to, but with Kaisel I felt comfortable right away. The tips were straightforward and practical",
-    image: "/Learn/tes3.avif",
+    text: "The flexible pricing makes it easy to start testing without feeling locked in or clueless of features I will get. Smart move.",
   },
   {
-    name: "Lucas E.",
-    text: "Learning to send money and manage my account was smooth. The lessons are short but packed with exactly what you need to know",
-    image: "/Learn/tes4.avif",
+    text: "The pricing options fit every kind of user. It’s great to see that kind of inclusivity early on. Kaisel is heading the right path and is destined for great things.",
   },
 ];
 
@@ -29,7 +21,7 @@ const TestimonialReview = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="py-[24] px-[32px] bg-gradient-to-tr from-purple-800 to-blue-800  text-white space-y-[20px] rounded-3xl shadow-lg"
+            className="py-[24] px-[32px] bg-gradient-to-tr from-purple-800 to-blue-800  text-white space-y-[30px] rounded-3xl shadow-lg"
           >
             <div className="flex justify-between">
               <img
@@ -49,7 +41,7 @@ const TestimonialReview = () => {
             </div>
             <div className="flex gap-2 items-center">
               <img
-                src='/tes/userIcon.png'
+                src="/tes/userIcon.png"
                 alt=""
                 className=" w-[69px] h-[69px] "
               />
