@@ -7,6 +7,7 @@ import { ChangeEvent, useState } from "react";
 import Link from "next/link";
 export default function WaitlistCard() {
   const [message, setMessage] = useState("");
+  const [errormessage, setErrorMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [Userdata, setaData] = useState<{ email: string }>({
     email: "",
@@ -30,7 +31,8 @@ export default function WaitlistCard() {
 
     const data = await res.json();
     setLoading(false);
-    setMessage(data.message || data.error);
+    setMessage(data.message);
+    setErrorMessage(data.error);
   };
 
   return (
@@ -75,19 +77,24 @@ export default function WaitlistCard() {
           {message && (
             <p className="my-2 text-center text-sm text-gray-600">{message}</p>
           )}
+          {errormessage && (
+            <p className="my-2 text-center text-sm text-red-600">
+              {errormessage}
+            </p>
+          )}
 
           <p className="text-gray-400 text-xs mb-3">
             Follow us on socials for early product drops and updates.
           </p>
 
           {
-            <div className="flex gap-3 w-full">
+            <div className="flex flex-col md:flex-row gap-3 w-full">
               <Link
                 href="https://www.linkedin.com/in/henrygozy/"
                 target="_blank"
                 className="flex-1"
               >
-                <button className="flex gap-2 items-center bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer">
+                <button className="flex gap-2 justify-center  md:justify-start items-center  bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer">
                   <Image
                     src="/Social/x.png"
                     alt="linkedIn"
@@ -102,7 +109,7 @@ export default function WaitlistCard() {
                 target="_blank"
                 className="flex-1"
               >
-                <button className="flex gap-2 items-center bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer ">
+                <button className="flex gap-2 justify-center  md:justify-start items-center bg-white text-black py-1 px-3 w-full rounded font-medium cursor-pointer ">
                   <Image
                     src="/Social/linkedIn.png"
                     alt="linkedIn"
