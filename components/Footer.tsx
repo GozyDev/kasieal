@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Social icons */}
         <div className="flex space-x-6">
           <Link
-            href="https://x.com/Gozy_Dev"
+            href="https://x.com/bankwithkaisel"
             target="_blank"
             className="bg-black p-3 rounded-lg shadow hover:scale-105 transition"
           >
@@ -24,7 +24,7 @@ export default function Footer() {
             <FaInstagram className="w-12 h-12 text-white" />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/henrygozy/"
+            href="https://www.linkedin.com/company/kaisel/"
             target="_blank"
             className="bg-blue-600 p-3 rounded-lg shadow hover:scale-105 transition"
           >

@@ -90,7 +90,7 @@ export default function WaitlistCard() {
           {
             <div className="flex flex-col md:flex-row gap-3 w-full">
               <Link
-                href="https://www.linkedin.com/in/henrygozy/"
+                href="https://x.com/bankwithkaisel"
                 target="_blank"
                 className="flex-1"
               >
@@ -105,7 +105,7 @@ export default function WaitlistCard() {
                 </button>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/henrygozy/"
+                href="https://www.linkedin.com/company/kaisel/"
                 target="_blank"
                 className="flex-1"
               >
