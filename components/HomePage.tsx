@@ -28,10 +28,10 @@ const HomePage = () => {
             <PrimaryButton
               text="Open An Account"
               href="/WaitList"
-              className="absolute right-[15px] top-1/2 -translate-y-1/2"
+              className="absolute right-[15px] top-1/2 -translate-y-1/2 !text-sm md:!text-md !p-3 md:!py-[15px] md:!px-[25px]"
             ></PrimaryButton>
             <input
-              type="text"
+              type="text" 
               placeholder="Enoch@example.com"
               className="w-full h-full border bg-white text-black rounded-full p-4 px-7 text-[12px] lg:text-[18px]"
             />

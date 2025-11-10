@@ -17,7 +17,7 @@ export default function Footer() {
             <FaXTwitter className="w-12 h-12 text-white" />
           </Link>
           <Link
-            href="#"
+            href="https://www.instagram.com/bankwithkaisel?igsh=MW95a2lteXk4czIxZg=="
             target="_blank"
             className="bg-purple-500 p-3 rounded-lg shadow hover:scale-105 transition"
           >
