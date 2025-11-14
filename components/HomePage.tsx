@@ -11,7 +11,7 @@ const HomePage = () => {
           <img
             src="/review.png"
             alt=""
-            className="w-[70%] lg:w-[45%] drop-shadow-[5px_10px_5px_rgba(89,22,139,0.1)] mx-auto"
+            className="w-[70%] md:w-[19%] drop-shadow-[5px_10px_5px_rgba(89,22,139,0.1)] mx-auto"
           />
         </div>
         <div>
