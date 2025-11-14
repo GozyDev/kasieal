@@ -2,9 +2,13 @@ import MoreAticles from "@/components/MoreAticles";
 import { articles } from "@/lib/data";
 import { notFound } from "next/navigation";
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const slug = decodeURIComponent(params.slug);
-  console.log('SLUG',slug)
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = decodeURIComponent((await params).slug);
+  console.log("SLUG", slug);
   const article = articles.find((a) => a.slug === slug);
 
   if (!article) return notFound();
@@ -69,7 +73,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <MoreAticles selected={article.slug}/>
+      <MoreAticles selected={article.slug} />
     </div>
   );
 }

@@ -19,7 +19,7 @@ const MoreAticles = ({ selected }: { selected: string }) => {
               className="py-[40px] p-[10px]  border border-b-black/10 space-y-[10px] group cursor-pointer relative hover:bg-purple-500/5 rounded"
             >
               <p className="group-hover:text-purple-800">{article.date}</p>
-              <p className="text-3xl font-semibold group-hover:text-purple-800">
+              <p className="text-xl md:text-3xl font-semibold group-hover:text-purple-800">
                 {article.title}
               </p>
               <motion.img
